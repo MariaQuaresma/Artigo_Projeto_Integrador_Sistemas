@@ -70,14 +70,14 @@
 \jyear{202X}
 
 \category{Artigo de Pesquisa/Research Paper}
-\title[Template da REIC 2025 para artigos em português]{Plataforma Web com Inteligência Artificial para Identificação de Doenças em Plantas}
-\engtitle{\textcolor{engtitle}{Presenting the REIC template for 2025 - Version for works in Portuguese}}
+\title[Plataforma Web com Inteligência Artificial para Identificação de Doenças em Plantas]{Plataforma Web com Inteligência Artificial para Identificação de Doenças em Plantas}
+\engtitle{\textcolor{engtitle}{Web platform with Artificial Intelligence for identifying plant diseases}}
 
 %THE ORCID IS MANDATORY FOR EACH AUTHOR IN JBCS
-\author[Viterbo et al. 202X]{
-\affil{\textbf{Maria Quaresma}~\orcidlink{0000-0002-0339-6624}~\textcolor{blue}{\faEnvelopeO}~~[{Centro Federal de Educação Tecnologica Celso Sucknow da Fonseca (CEFET)}~|\href{mailto:maria.rocha@aluno.cefet-rj.br}{~{\textit{maria.rocha@aluno.cefet-rj.br}}}~]}
+\author[Quaresma em 2026]{
+\affil{\textbf{Maria Quaresma}~\orcidlink{0000-0002-0339-6624}~\textcolor{blue}{\faEnvelopeO}~~[{Centro Federal de Educação Tecnologica Celso Sucknow da Fonseca}~|\href{mailto:maria.rocha@aluno.cefet-rj.br}{~{\textit{maria.rocha@aluno.cefet-rj.br}}}~]}
 
-\affil{\textbf{Neemias Cruz}~\orcidlink{0000-0002-7110-2026}~\textcolor{blue}{\faEnvelopeO}~~[{Centro Federal de Educação Tecnologica Celso Sucknow da Fonseca (CEFET)}~|\href{mailto:neemiascruz@hotmail.com}{{\textit{neemiascruz@hotmail.com}}}~]}
+\affil{\textbf{Neemias Cruz}~\orcidlink{0000-0002-7110-2026}~\textcolor{blue}{\faEnvelopeO}~~[{Centro Federal de Educação Tecnologica Celso Sucknow da Fonseca}~|\href{mailto:neemiascruz@hotmail.com}{{\textit{neemiascruz@hotmail.com}}}~]}
 
 }
 
@@ -88,7 +88,7 @@
 \maketitle
 
 \begin{mail}
-Centro Federal de Educação Tecnologica Celso Sucknow da Fonseca (CEFET), R. Miguel Ângelo, 96 - Maria da Graça, Rio de Janeiro - RJ, 20785-220, Brasil. 
+Centro Federal de Educação Tecnologica Celso Sucknow da Fonseca, R. Miguel Ângelo, 96 - Maria da Graça, Rio de Janeiro - RJ, 20785-220, Brasil. 
 \end{mail}
 
 
@@ -101,11 +101,11 @@ This text, formatted as a scientific article, aims to present the new SBC paper 
 \end{abstract-en}
 
 \begin{pchaves}
-Visão Computacional, Aprendizado Profundo, Agricultura Digital.
+Visão Computacional, Aprendizado Profundo, Agricultura Digital
 \end{pchaves}
 
 \begin{keywords}
-Proceedings, Template, SBC OpenLib, Indexing
+Computer Vision, Deep Learning, Digital Agriculture
 \end{keywords}
 
 \begin{dates}
@@ -126,35 +126,50 @@ Proceedings, Template, SBC OpenLib, Indexing
 \section{Introdução}
 \label{sec:intro}
 
-Observações iniciais do Prof. Ralha:
-\begin{itemize}
-    \item Este arquivo faz uso ``implícito"\ de texto em latim que é provido por um certo pacote---não vou citar o nome---que desenvolvedores de classes \LaTeX\ usam para facilitar testes. Vi que esse pacote não está incluido no preâmbulo deste documento. Ainda bem!
-    \item por gentileza, entendam que publicar em jornais científicos está relacionado a tipografia profissional. Então deixem este aspecto para o \LaTeX. Seria aconselhável a leitura de textos em typografia para que entendam que ``editoração de textos'' feita por produtos comerciais tipo eh ... vocês sabem quais! não é nem de perto algo que se aproxime da tipografia!
-    \item Por óbvio, deve-se sempre iniciar a criação de um arquivo \TeX\ pelo seu preâmbulo. Deve-se evitar \textit{tomar emprestado} templates de outras pessoas. Tenho observado que muitos ``usuários'' não observam este fato levando a casos em que o arquivo inclui o mesmo pacote duas, três e até quatro vezes.
-\end{itemize}
+A agricultura desempenha papel fundamental na economia mundial e na segurança alimentar, sendo responsável pelo fornecimento de 
+alimentos, matérias-primas e recursos essenciais para a sociedade. Entretanto, doenças que afetam culturas agrícolas representam 
+uma das principais causas de perdas produtivas, comprometendo tanto a qualidade quanto a quantidade das colheitas. Nesse contexto, 
+a identificação precoce de doenças em plantas torna-se um fator determinante para reduzir prejuízos econômicos e promover práticas 
+agrícolas mais sustentáveis. Com o avanço das tecnologias digitais, soluções baseadas em Inteligência Artificial (IA) e visão 
+computacional vêm sendo exploradas como alternativas para auxiliar agricultores e produtores no monitoramento das plantações \citep{ref1}. 
 
-A classe \textsl{sbc2025} é projetada para trabalhar com os \textit{engines} pdftex e luatex. Dessa forma, deve-se compilar o documento 
-\begin{enumerate}
-    \item no Overleaf, ajustando no menu opção de compilação para \textbf{xelatex} ou \textbf{lualatex}.\footnote{Os engines são denominados xetex e luatex. Já os comandos de compilação são \textsl{xelatex} e \textsl{lualatex}.}
-    \item se compilando localmente, na sua IDE faça o ajuste do compilador. Se usuário raiz, no terminal de comando, digite \textsl{xelatex filename} ou \textsl{lualatex filename}. Não é necessário digitar a extensão \textsl{tex}.
-\end{enumerate}
+Nos últimos anos, o emprego de técnicas de Aprendizado Profundo (Deep Learning) tem proporcionado avanços significativos na 
+classificação automática de doenças vegetais. Revisões recentes evidenciam que diferentes arquiteturas, como Redes Neurais 
+Convolucionais (CNNs), Vision Transformers (ViTs) e modelos híbridos, apresentam elevados índices de desempenho em bases públicas 
+de dados, contribuindo para a automação do diagnóstico fitossanitário e para o desenvolvimento da agricultura de precisão \citep{ref2,ref3}. 
+Nesse contexto, Mohanty, Hughes e Salathé (2016) \citep{ref1} demonstraram que modelos baseados em redes neurais convolucionais podem alcançar 
+taxas de acurácia superiores a 99% em conjuntos de dados controlados, evidenciando o potencial da Inteligência Artificial como 
+ferramenta de apoio à identificação de doenças em plantas.
 
-A classe \textsl{sbc2025} inclui internamente os seguintes pacotes:
-\begin{itemize}
-    \item xcolor
-    \item graphicx
-    \item amsmath amssymb
-    \item hyperref
-    \item babel
-\end{itemize}
-\noindent consequentemente, não há necessidade de incluí-los no preâmbulo.
+Entre as arquiteturas mais promissoras para tarefas de classificação de imagens destaca-se a EfficientNet, proposta por Tan e 
+Le (2019) \citep{ref4}. Esse modelo introduziu uma estratégia de escalonamento composto capaz de balancear profundidade, largura e 
+resolução da rede neural, proporcionando elevado desempenho com menor custo computacional quando comparado a arquiteturas 
+tradicionais. Tais características tornam essa arquitetura particularmente adequada para aplicações voltadas à agricultura digital,
+nas quais são desejáveis rapidez, precisão e possibilidade de implantação em ambientes com recursos computacionais limitados.
 
-{\bfseries Quem tentar compilar usando a opção \texttt{pdflatex} no Overleaf vai receber uma mensagem de erro solicitando o usuário a ajustar a opção de compilação.}
+Apesar dos avanços observados na literatura, diversos desafios ainda dificultam a aplicação prática dessas soluções em 
+cenários reais. Muitos modelos são desenvolvidos e avaliados em ambientes controlados, utilizando imagens com iluminação 
+adequada, fundo padronizado e elevada qualidade visual. Em condições reais, entretanto, fatores como variações ambientais, 
+ruídos nas imagens, diferenças entre espécies vegetais e semelhanças entre determinadas doenças podem comprometer a capacidade 
+de generalização dos modelos. Revisões recentes apontam que a robustez e a confiabilidade dos sistemas inteligentes continuam 
+sendo questões relevantes para a adoção dessas tecnologias em larga escala \citep{ref2}.
 
-Para a pergunta \textit{Por que não funciona com o \texttt{pdflatex}}?  A resposta é: \textbf{fontes!} Pdflatex usa um esquema de codificação de fontes complexo. 
-O fonte \texttt{academicons}\footnote{Do fonte em questão usa-se apenas o glifo associado ao Orchid.} não tem as definições necessárias para uso com o \texttt{pdflatex}. Enquanto isso não for realizado, \texttt{pdflatex} não pode ser usado. 
+Além disso, grande parte dos trabalhos concentra-se na utilização de um único modelo de classificação, sem considerar mecanismos 
+adicionais capazes de verificar a consistência entre a espécie vegetal identificada e a doença associada. Dessa forma, ainda 
+existe uma lacuna relacionada à integração de múltiplos modelos especializados e à utilização de estratégias complementares de 
+validação, capazes de reduzir ambiguidades e aumentar a confiabilidade dos diagnósticos produzidos \citep{ref5}.
 
-\section{Diferenças entre \texttt{fontenc} e \texttt{fontspec}}
+Diante desse cenário, o presente trabalho tem como objetivo desenvolver uma plataforma web inteligente para identificação automática
+de doenças em plantas por meio de técnicas de Inteligência Artificial e Visão Computacional. A solução proposta baseia-se em uma 
+arquitetura cliente-servidor e combina dois modelos especializados, sendo um destinado à identificação da espécie vegetal e outro 
+à classificação da doença. Adicionalmente, foram implementados mecanismos de validação cruzada, análise de compatibilidade entre 
+planta e doença e cálculo do nível de confiança das predições, visando reduzir inconsistências e aumentar a confiabilidade dos 
+resultados. A plataforma também contempla funcionalidades de autenticação de usuários, armazenamento do histórico de diagnósticos 
+e geração automática de informações textuais complementares, constituindo uma solução integrada voltada ao apoio à tomada de decisão
+no contexto da agricultura digital \citep{ref6}.
+
+\section{Materiais e Métodos}
+\label{sec:Materiais e Métodos}
 
 Os dois pacotes do título da seção pertencem a ``universos'' distintos e não devem ser ambos incluídos no mesmo preâmbulo sob a pena de conflitos.
 
@@ -369,10 +384,6 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i
 \begin{acknowledgements}
 ESTA DECLARAÇÃO É OPCIONAL. Este é um texto de agradecimentos com várias linhas. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
 \end{acknowledgements}
-
-\begin{funding}
-ESTA DECLARAÇÃO É OPCIONAL. Esta pesquisa foi financiada por lorem ipsum dolor sit amet, consectetur adipiscing elit.
-\end{funding}
 
 \begin{contributions}
 ESTA DECLARAÇÃO É OBRIGATÓRIA. Sugerimos que os autores descrevam sua contribuição usando a Taxonomia CRediT (\href{https://credit.niso.org/}{https://credit.niso.org/}) como neste exemplo: JV contribuiu para a concepção deste estudo. CB, RP e CM realizaram os experimentos. JV é o principal contribuidor e escritor deste manuscrito. Todos os autores leram e aprovaram o manuscrito final. 

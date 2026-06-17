@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.16)  16 JUN 2026 19:23
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.16)  16 JUN 2026 22:41
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -793,7 +793,7 @@ LaTeX Font Info:    Trying to load font information for T1+qtm on input line 84.
 File: t1qtm.fd 2009/09/25 v1.2 font definition file for T1/qtm
 ) (main-pt.aux
 Package babel Info: 'portuguese' activates 'portuges' shorthands.
-(babel)             Reported on input line 8.
+(babel)             Reported on input line 14.
 )
 \openout1 = `main-pt.aux'.
 
@@ -988,28 +988,14 @@ LaTeX Font Info:    Font shape `T1/FiraSans-OsF/sl/n' in size <14> not available
 (Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 126.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/book/n' will be
 (Font)              scaled to size 14.0pt on input line 126.
-LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 131.
-(C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\ts1qtm.fd
-File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
-)
 
-LaTeX Font Warning: Font shape `T1/qtm/m/sl' in size <10> not available
-(Font)              Font shape `T1/qtm/m/it' tried instead on input line 136.
+Underfull \vbox (badness 5637) has occurred while \output is active []
 
 
-LaTeX Font Warning: Font shape `T1/qtm/m/sl' in size <8> not available
-(Font)              Font shape `T1/qtm/m/it' tried instead on input line 138.
+Underfull \vbox (badness 1424) has occurred while \output is active []
 
-
-LaTeX Font Warning: Font shape `T1/cmtt/b/n' undefined
-(Font)              using `T1/cmtt/m/n' instead on input line 152.
-
-Package microtype Info: Loading generic protrusion settings for font family
-(microtype)             `cmtt' (encoding: T1).
-(microtype)             For optimal results, create family-specific settings.
-(microtype)             See the microtype manual for details.
 LaTeX Font Info:    Trying to load font information for U+fontawesomeone on input line 162.
-(C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome\ufontawesomeone.fd
+ (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome\ufontawesomeone.fd
 File: ufontawesomeone.fd 2016/05/22 Font definitions for U/fontawesomeone.
 )
 
@@ -1022,47 +1008,43 @@ Package fancyhdr Warning: \headheight is too small (36.90002pt):
 [1{C:/Users/Maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}{C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec.enc}{C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome/fontawesomeone.enc}{C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fira/fir_2mfh3o.enc}{C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fira/fir_iln36p.enc}{C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/fontawesome/fontawesometwo.enc}
 
 
-{C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [2{C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}]
+]
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `cmtt' (encoding: T1).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+ [2{C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}]
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/sl/n' in size <12> not available
-(Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 240.
+(Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 255.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/book/n' will be
-(Font)              scaled to size 12.0pt on input line 240.
+(Font)              scaled to size 12.0pt on input line 255.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <12> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 240.
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 255.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 12.0pt on input line 240.
+(Font)              scaled to size 12.0pt on input line 255.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <10> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 248.
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 263.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 248.
+(Font)              scaled to size 10.0pt on input line 263.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/it' in size <10> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/it' tried instead on input line 248.
+(Font)              Font shape `T1/FiraSans-OsF/bold/it' tried instead on input line 263.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/it' will be
-(Font)              scaled to size 10.0pt on input line 248.
- [3] [4]
-<sol.jpg, id=117, 1156.32pt x 650.43pt>
+(Font)              scaled to size 10.0pt on input line 263.
+ [3]
+LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 316.
+ (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\ts1qtm.fd
+File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
+) [4{C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
+<sol.jpg, id=128, 1156.32pt x 650.43pt>
 File: sol.jpg Graphic file (type jpg)
 <use sol.jpg>
-Package pdftex.def Info: sol.jpg  used on input line 329.
+Package pdftex.def Info: sol.jpg  used on input line 344.
 (pdftex.def)             Requested size: 240.0pt x 134.99644pt.
-
-Underfull \vbox (badness 2875) has occurred while \output is active []
-
 File: sol.jpg Graphic file (type jpg)
 <use sol.jpg>
-Package pdftex.def Info: sol.jpg  used on input line 340.
+Package pdftex.def Info: sol.jpg  used on input line 355.
 (pdftex.def)             Requested size: 360.0pt x 202.49466pt.
- [5 <./sol.jpg>] [6] (main-pt.bbl
-Underfull \hbox (badness 1275) in paragraph at lines 4--7
-[]\T1/qtm/m/n/10 (+20) Beall, J. (2017).  What I le-ar-ned from pre-da-tory pu-
- []
-
-
-Underfull \hbox (badness 2922) in paragraph at lines 4--7
-\T1/qtm/m/n/10 (+20) blishers.  \T1/qtm/m/it/10 (+20) Bi-o-che-mia me-dica\T1/qtm/m/n/10 (+20) , 27(2):273--278. DOI:
- []
-
-) [7
+ [5 <./sol.jpg>] [6] (main-pt.bbl) [7
 
 ] (main-pt.aux)
  ***********
@@ -1074,20 +1056,20 @@ L3 programming layer <2026-05-26>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main-pt.out' has not changed.
-(rerunfilecheck)             Checksum: BBFB39E24909BB10567298C63C27169D;1615.
+(rerunfilecheck)             Checksum: C5480E781DAA51D31A2721766A5ED05D;1529.
  ) 
 Here is how much of TeX's memory you used:
- 33873 strings out of 467508
- 646137 string characters out of 5408759
- 1080757 words of memory out of 5000000
- 62206 multiletter control sequences out of 15000+600000
- 941113 words of font info for 275 fonts, out of 8000000 for 9000
+ 33855 strings out of 467508
+ 645848 string characters out of 5408759
+ 1079135 words of memory out of 5000000
+ 62191 multiletter control sequences out of 15000+600000
+ 937802 words of font info for 273 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 132i,14n,135p,1078b,976s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1440.pk> <C:\Users\Maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ecit1000.pk> <C:\Users\Maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-Bold.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-BoldItalic.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-Book.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-BookItalic.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome/FontAwesome.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmbi.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmri.pfb>
-Output written on main-pt.pdf (7 pages, 592949 bytes).
+ 132i,15n,135p,1078b,976s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-Bold.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-BoldItalic.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-Book.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-BookItalic.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome/FontAwesome.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmbi.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmri.pfb>
+Output written on main-pt.pdf (7 pages, 591973 bytes).
 PDF statistics:
- 266 PDF objects out of 1000 (max. 8388607)
- 36 named destinations out of 1000 (max. 500000)
- 94802 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 264 PDF objects out of 1000 (max. 8388607)
+ 33 named destinations out of 1000 (max. 500000)
+ 91730 words of extra memory for PDF output out of 106986 (max. 10000000)
 

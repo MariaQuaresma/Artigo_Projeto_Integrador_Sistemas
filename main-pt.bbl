@@ -1,31 +1,37 @@
 \begin{thebibliography}{}
 
-\bibitem[Beall, 2017]{ref3}
-Beall, J. (2017).
-\newblock What {I} learned from predatory publishers.
-\newblock {\em Biochemia medica}, 27(2):273--278. DOI: 10.11613/BM.2017.029.
+\bibitem[Hoaib {\em et~al}., 2023]{ref5}
+Hoaib, M. {\em et~al}. (2023).
+\newblock An advanced deep learning models-based plant disease detection: A
+  review of recent research.
+\newblock {\em Frontiers in Plant Science}, 14.
 
-\bibitem[Garson, 2001]{ref2}
-Garson, G.~D. (2001).
-\newblock {\em Guide to writing empirical papers, theses, and dissertations}.
-\newblock CRC Press.
+\bibitem[Liu and Wang, 2021]{ref3}
+Liu, J. and Wang, X. (2021).
+\newblock Plant diseases and pests detection based on deep learning: A review.
+\newblock {\em Plant Methods}, 17(22).
 
-\bibitem[Goldbort, 2006]{ref1}
-Goldbort, R. (2006).
-\newblock {\em Writing for science}.
-\newblock Yale University Press.
+\bibitem[Mohanty {\em et~al}., 2016]{ref1}
+Mohanty, S.~P., Hughes, D.~P., and Salathé, M. (2016).
+\newblock Using deep learning for image-based plant disease detection.
+\newblock {\em Frontiers in Plant Science}, 7:1419.
 
-\bibitem[Mendez {\em et~al}., 2020]{ref5}
-Mendez, D., Graziotin, D., Wagner, S., and Seibold, H. (2020).
-\newblock Open science in software engineering.
-\newblock In {\em Contemporary empirical methods in software engineering},
-  pages 477--501. Springer. DOI: 10.1007/978-3-030-32489-6\_17.
+\bibitem[Pacal {\em et~al}., 2024]{ref2}
+Pacal, I. {\em et~al}. (2024).
+\newblock A systematic review of deep learning techniques for plant diseases.
+\newblock {\em Artificial Intelligence Review}, 57.
 
-\bibitem[Piwowar {\em et~al}., 2018]{ref4}
-Piwowar, H., Priem, J., Larivi{\`e}re, V., Alperin, J.~P., Matthias, L.,
-  Norlander, B., Farley, A., West, J., and Haustein, S. (2018).
-\newblock The state of {OA}: {A} large-scale analysis of the prevalence and
-  impact of open access articles.
-\newblock {\em PeerJ}, 6:e4375. DOI: 10.7717/peerj.4375.
+\bibitem[Quaresma, 2026]{ref6}
+Quaresma, M. (2026).
+\newblock Cemaplant: Ia para identificação de doenças em plantas.
+\newblock \url{https://github.com/MariaQuaresma/CemaPlant}.
+\newblock Acesso em: 2 jun. 2026.
+
+\bibitem[Tan and Le, 2019]{ref4}
+Tan, M. and Le, Q.~V. (2019).
+\newblock Efficientnet: Rethinking model scaling for convolutional neural
+  networks.
+\newblock In {\em Proceedings of the 36th International Conference on Machine
+  Learning}, pages 6105--6114.
 
 \end{thebibliography}
