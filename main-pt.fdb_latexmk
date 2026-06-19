@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main-pt"] 1781660470.04274 "main-pt.aux" "main-pt.bbl" "main-pt" 1781660475.73683 0
+["bibtex main-pt"] 1781910754.79859 "main-pt.aux" "main-pt.bbl" "main-pt" 1781911495.91066 0
   "./apalike-sol.bst" 1781623862 24928 269dedab788b7f84af88c155ecb45872 ""
   "./refs.bib" 1781660068 1431 ba13d54edcf39c65fb57623fb6946b20 ""
-  "main-pt.aux" 1781660473 3967 4635ee0be8b374a3a5071c42aa25a7ae "pdflatex"
+  "main-pt.aux" 1781911494 3967 1a082b3c28a7fcf22592f9126065dd35 "pdflatex"
   (generated)
   "main-pt.bbl"
   "main-pt.blg"
   (rewritten before read)
-["pdflatex"] 1781660470.47833 "c:/todosmeusarquivos/ProjetoIntegrador/Artigo_Projeto_Integrador_Sistemas/main-pt.tex" "main-pt.pdf" "main-pt" 1781660475.73785 0
+["pdflatex"] 1781911491.22056 "c:/todosmeusarquivos/ProjetoIntegrador/Artigo_Projeto_Integrador_Sistemas/main-pt.tex" "main-pt.pdf" "main-pt" 1781911495.91184 0
   "C:/Users/Maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1781640446 261737 7220613afb705163d15b5701e7470e45 ""
   "C:/Users/Maria/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk" 1781640458 20028 7baa37d5dc45a051ea6b5be0ae81255b ""
   "C:/Users/Maria/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1781640244 13367137 84c057c88458c5bce7d2f16815a74892 ""
@@ -253,11 +253,11 @@
   "C:/Users/Maria/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/Maria/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
   "aas_macros.sty" 1781623860 4967 cf45ff75f433e372cec5993ac08f4363 ""
-  "c:/todosmeusarquivos/ProjetoIntegrador/Artigo_Projeto_Integrador_Sistemas/main-pt.tex" 1781660466 40479 9dd8dc497d3db95b1ad07bdc99f972c3 ""
-  "main-pt.aux" 1781660473 3967 4635ee0be8b374a3a5071c42aa25a7ae "pdflatex"
-  "main-pt.bbl" 1781660470 1396 0ad88431b1e65e88c7bf34d320a36092 "bibtex main-pt"
-  "main-pt.out" 1781660473 1529 c5480e781daa51d31a2721766a5ed05d "pdflatex"
-  "main-pt.tex" 1781660466 40479 9dd8dc497d3db95b1ad07bdc99f972c3 ""
+  "c:/todosmeusarquivos/ProjetoIntegrador/Artigo_Projeto_Integrador_Sistemas/main-pt.tex" 1781911489 41488 2f5856c36053286da0ab04d736a018f5 ""
+  "main-pt.aux" 1781911494 3967 1a082b3c28a7fcf22592f9126065dd35 "pdflatex"
+  "main-pt.bbl" 1781910755 1396 0ad88431b1e65e88c7bf34d320a36092 "bibtex main-pt"
+  "main-pt.out" 1781911494 1529 c5480e781daa51d31a2721766a5ed05d "pdflatex"
+  "main-pt.tex" 1781911489 41488 2f5856c36053286da0ab04d736a018f5 ""
   "sbc2025.cls" 1781623862 14970 28765eed94e0215f0a858dd242489835 ""
   "sol.jpg" 1781623860 151395 dd7eb84f1ace30eb0678fd97a5266d6f ""
   (generated)
