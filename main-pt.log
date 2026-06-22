@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.16)  19 JUN 2026 20:24
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.16)  21 JUN 2026 22:18
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1006,48 +1006,73 @@ Package fancyhdr Warning: \headheight is too small (36.90002pt):
 
 
 ]
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/sl/n' in size <12> not available
+(Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 194.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/book/n' will be
+(Font)              scaled to size 12.0pt on input line 194.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <12> not available
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 194.
+LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
+(Font)              scaled to size 12.0pt on input line 194.
+ [2] [3]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Underfull \vbox (badness 3098) has occurred while \output is active []
+Overfull \hbox (9.55396pt too wide) in paragraph at lines 394--416
+ [][] 
+ []
 
- [2{C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ec-sc.enc}]
-LaTeX Font Info:    Font shape `T1/FiraSans-OsF/sl/n' in size <12> not available
-(Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 270.
-LaTeX Font Info:    Font shape `T1/FiraSans-OsF/book/n' will be
-(Font)              scaled to size 12.0pt on input line 270.
-LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <12> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 270.
-LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 12.0pt on input line 270.
-LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <10> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 278.
-LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 10.0pt on input line 278.
-LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/it' in size <10> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/it' tried instead on input line 278.
-LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/it' will be
-(Font)              scaled to size 10.0pt on input line 278.
- [3]
-LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 331.
- (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\ts1qtm.fd
-File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
-) [4{C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}]
-<sol.jpg, id=128, 1156.32pt x 650.43pt>
-File: sol.jpg Graphic file (type jpg)
-<use sol.jpg>
-Package pdftex.def Info: sol.jpg  used on input line 359.
-(pdftex.def)             Requested size: 240.0pt x 134.99644pt.
-File: sol.jpg Graphic file (type jpg)
-<use sol.jpg>
-Package pdftex.def Info: sol.jpg  used on input line 370.
-(pdftex.def)             Requested size: 360.0pt x 202.49466pt.
+[4]
 
-Underfull \vbox (badness 2875) has occurred while \output is active []
+LaTeX Warning: Command \c invalid in math mode on input line 489.
 
- [5 <./sol.jpg>] [6] (main-pt.bbl) [7] (main-pt.aux)
+Missing character: There is no ç in font cmr7!
+
+LaTeX Warning: Command \c invalid in math mode on input line 513.
+
+
+LaTeX Warning: Command \c invalid in math mode on input line 513.
+
+Missing character: There is no ç in font cmr10!
+Missing character: There is no ç in font cmr7!
+
+LaTeX Warning: Command \c invalid in math mode on input line 550.
+
+Missing character: There is no ç in font cmr6!
+
+LaTeX Warning: Command \c invalid in math mode on input line 558.
+
+Missing character: There is no ç in font cmr6!
+
+LaTeX Warning: Command \c invalid in math mode on input line 559.
+
+Missing character: There is no ç in font cmr6!
+[5] [6] (main-pt.bbl
+Underfull \hbox (badness 2213) in paragraph at lines 23--28
+[]\T1/qtm/m/n/10 (+20) Farias, K. and Laz-zari, L. (2023).  Event-driven ar-
+ []
+
+
+Underfull \hbox (badness 6842) in paragraph at lines 23--28
+\T1/qtm/m/n/10 (+20) chi-tec-ture and rest ar-chi-tec-tu-ral style: An ex-plo-
+ []
+
+
+Underfull \hbox (badness 4660) in paragraph at lines 23--28
+\T1/qtm/m/n/10 (+20) ra-tory study on mo-du-la-rity.  \T1/qtm/m/it/10 (+20) Jour-nal of Ap-plied
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 23--28
+\T1/qtm/m/it/10 (+20) Re-se-arch and Te-ch-no-logy\T1/qtm/m/n/10 (+20) , 21(3):338--351. DOI:
+ []
+
+
+Underfull \vbox (badness 3590) has occurred while \output is active []
+
+) [7] (main-pt.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-05-26>
@@ -1057,20 +1082,20 @@ L3 programming layer <2026-05-26>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main-pt.out' has not changed.
-(rerunfilecheck)             Checksum: C5480E781DAA51D31A2721766A5ED05D;1529.
+(rerunfilecheck)             Checksum: 68636DE42BBDDA2258DD9375F3868D43;2575.
  ) 
 Here is how much of TeX's memory you used:
- 33865 strings out of 467508
- 645942 string characters out of 5408759
- 1079020 words of memory out of 5000000
- 62191 multiletter control sequences out of 15000+600000
- 938332 words of font info for 278 fonts, out of 8000000 for 9000
+ 33729 strings out of 467508
+ 641818 string characters out of 5408759
+ 1084278 words of memory out of 5000000
+ 62069 multiletter control sequences out of 15000+600000
+ 892389 words of font info for 259 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 132i,14n,135p,1078b,976s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-Bold.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-BoldItalic.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-Book.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-BookItalic.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome/FontAwesome.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr7.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmbi.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmri.pfb>
-Output written on main-pt.pdf (7 pages, 593238 bytes).
+ 132i,14n,135p,1078b,949s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\Maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-Bold.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-BoldItalic.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-Book.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-BookItalic.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome/FontAwesome.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmri.pfb>
+Output written on main-pt.pdf (7 pages, 470983 bytes).
 PDF statistics:
- 264 PDF objects out of 1000 (max. 8388607)
- 33 named destinations out of 1000 (max. 500000)
- 91730 words of extra memory for PDF output out of 106986 (max. 10000000)
+ 370 PDF objects out of 1000 (max. 8388607)
+ 49 named destinations out of 1000 (max. 500000)
+ 73837 words of extra memory for PDF output out of 74296 (max. 10000000)
 

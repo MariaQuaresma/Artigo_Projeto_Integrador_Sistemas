@@ -1,25 +1,100 @@
 \begin{thebibliography}{}
 
+\bibitem[Ambler, 1997]{ref11}
+Ambler, S.~W. (1997).
+\newblock Mapping objects to relational databases.
+\newblock An AmbySoft Inc. White Paper.
+\newblock Modified from Building Object Applications That Work, SIGS Books.
+
+\bibitem[Camenisch and Lehmann, 2017]{ref10}
+Camenisch, J. and Lehmann, A. (2017).
+\newblock Privacy-preserving user-auditable pseudonym systems.
+\newblock {\em IEEE Transactions on Dependable and Secure Computing},
+  16(1):146--159. DOI: 10.1109/TDSC.2017.2693980.
+
+\bibitem[Carneiro {\em et~al}., 2018]{ref18}
+Carneiro, T., Da~N{\'o}brega, R. V.~M., Nepomuceno, T., Bian, G.-B.,
+  De~Albuquerque, V. H.~C., and Rebou{\c{c}}as~Filho, P.~P. (2018).
+\newblock Performance analysis of google colaboratory as a tool for
+  accelerating deep learning applications.
+\newblock {\em IEEE Access}, 6:61677--61685. DOI: 10.1109/ACCESS.2018.2874767.
+
+\bibitem[Farias and Lazzari, 2023]{ref8}
+Farias, K. and Lazzari, L. (2023).
+\newblock Event-driven architecture and rest architectural style: An
+  exploratory study on modularity.
+\newblock {\em Journal of Applied Research and Technology}, 21(3):338--351.
+  DOI: 10.22201/icat.24486736e.2023.21.3.1764.
+
+\bibitem[Flanagan, 2011]{ref14}
+Flanagan, D. (2011).
+\newblock {\em JavaScript: The Definitive Guide: Activate Your Web Pages}.
+\newblock O'Reilly Media, Sebastopol, 6 edition.
+
+\bibitem[Frain, 2022]{ref13}
+Frain, B. (2022).
+\newblock {\em Responsive Web Design with HTML5 and CSS}.
+\newblock Packt Publishing, Birmingham, 4 edition.
+
 \bibitem[Hoaib {\em et~al}., 2023]{ref5}
 Hoaib, M. {\em et~al}. (2023).
 \newblock An advanced deep learning models-based plant disease detection: A
   review of recent research.
 \newblock {\em Frontiers in Plant Science}, 14.
 
+\bibitem[Hughes and Salathé, 2015]{ref17}
+Hughes, D.~P. and Salathé, M. (2015).
+\newblock An open access repository of images on plant health to enable the
+  development of mobile disease diagnostics.
+\newblock {\em arXiv preprint arXiv:1511.08060}.
+
+\bibitem[Kornblith {\em et~al}., 2019]{ref21}
+Kornblith, S., Shlens, J., and Le, Q.~V. (2019).
+\newblock Do better imagenet models transfer better?
+\newblock In {\em Proceedings of the IEEE/CVF Conference on Computer Vision and
+  Pattern Recognition (CVPR)}, pages 2661--2671. DOI: 10.1109/CVPR.2019.00277.
+
 \bibitem[Liu and Wang, 2021]{ref3}
 Liu, J. and Wang, X. (2021).
 \newblock Plant diseases and pests detection based on deep learning: A review.
 \newblock {\em Plant Methods}, 17(22).
+
+\bibitem[Merkel, 2014]{ref12}
+Merkel, D. (2014).
+\newblock Docker: Lightweight linux containers for consistent development and
+  deployment.
+\newblock {\em Linux Journal}, 2014(239):2.
 
 \bibitem[Mohanty {\em et~al}., 2016]{ref1}
 Mohanty, S.~P., Hughes, D.~P., and Salathé, M. (2016).
 \newblock Using deep learning for image-based plant disease detection.
 \newblock {\em Frontiers in Plant Science}, 7:1419.
 
+\bibitem[Nikiforakis {\em et~al}., 2013]{ref16}
+Nikiforakis, N., Invernizzi, L., Kapravelos, A., Van~Acker, S., Joosen, W.,
+  Kruegel, C., and Vigna, G. (2013).
+\newblock Cookieless monster: Exploring the ecosystem of web-based device
+  fingerprinting.
+\newblock In {\em 2013 IEEE Symposium on Security and Privacy}, pages 541--555,
+  Berkeley, CA, USA. IEEE. DOI: 10.1109/SP.2013.43.
+
 \bibitem[Pacal {\em et~al}., 2024]{ref2}
 Pacal, I. {\em et~al}. (2024).
 \newblock A systematic review of deep learning techniques for plant diseases.
 \newblock {\em Artificial Intelligence Review}, 57.
+
+\bibitem[Pautasso {\em et~al}., 2008]{ref9}
+Pautasso, C., Zimmermann, O., and Leymann, F. (2008).
+\newblock Restful web services vs. big web services: Making the right
+  architectural decision.
+\newblock In {\em Proceedings of the 17th International Conference on World
+  Wide Web}, pages 805--814, New York, NY, USA. ACM. DOI:
+  10.1145/1367497.1367606.
+
+\bibitem[Prechelt, 1998]{ref22}
+Prechelt, L. (1998).
+\newblock Early stopping - but when?
+\newblock {\em Neural Networks: Tricks of the trade}.
 
 \bibitem[Quaresma, 2026]{ref6}
 Quaresma, M. (2026).
@@ -27,11 +102,42 @@ Quaresma, M. (2026).
 \newblock \url{https://github.com/MariaQuaresma/CemaPlant}.
 \newblock Acesso em: 2 jun. 2026.
 
+\bibitem[Raschka {\em et~al}., 2020]{ref7}
+Raschka, S., Patterson, J., and Nolet, C. (2020).
+\newblock Machine learning in python: Main developments and technology trends
+  in data science, machine learning, and artificial intelligence.
+\newblock {\em Information}, 11(4):193. DOI: 10.3390/info11040193.
+
+\bibitem[Shorten and Khoshgoftaar, 2019]{ref19}
+Shorten, C. and Khoshgoftaar, T.~M. (2019).
+\newblock A survey on image data augmentation for deep learning.
+\newblock {\em Journal of Big Data}, 6(60). DOI: 10.1186/s40537-019-0197-0.
+
 \bibitem[Tan and Le, 2019]{ref4}
 Tan, M. and Le, Q.~V. (2019).
 \newblock Efficientnet: Rethinking model scaling for convolutional neural
   networks.
 \newblock In {\em Proceedings of the 36th International Conference on Machine
   Learning}, pages 6105--6114.
+
+\bibitem[Yang {\em et~al}., 2023]{ref23}
+Yang, J., Jin, H., Tang, R., Han, X., Feng, Q.-W., Jiang, H., Yin, B., and Hu,
+  X. (2023).
+\newblock Harnessing the power of llms in practice: A survey on chatgpt and
+  beyond.
+\newblock {\em arXiv preprint arXiv:2304.13712}.
+
+\bibitem[Yosinski {\em et~al}., 2014]{ref20}
+Yosinski, J., Clune, J., Bengio, Y., and Lipson, H. (2014).
+\newblock How transferable are features in deep neural networks?
+\newblock In {\em Advances in Neural Information Processing Systems},
+  volume~27, pages 3320--3328.
+
+\bibitem[Zaidman {\em et~al}., 2013]{ref15}
+Zaidman, A., Matthijssen, N., Storey, M.-A., and Van~Deursen, A. (2013).
+\newblock Understanding ajax applications by connecting client and server-side
+  execution traces.
+\newblock {\em Empirical Software Engineering}, 18(1):181--218. DOI:
+  10.1007/s10664-012-9200-5.
 
 \end{thebibliography}
