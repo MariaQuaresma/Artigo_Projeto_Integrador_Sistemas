@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.16)  21 JUN 2026 22:18
+This is pdfTeX, Version 3.141592653-2.6-1.40.29 (MiKTeX 26.5) (preloaded format=pdflatex 2026.6.27)  28 JUN 2026 19:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -788,64 +788,109 @@ File: upsy.fd 2001/06/04 font definitions for U/psy.
 ))
 Package hyperref Info: Option `colorlinks' set `true' on input line 59.
 Package hyperref Info: Option `breaklinks' set `true' on input line 59.
-LaTeX Font Info:    Trying to load font information for T1+qtm on input line 84.
+ (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/pgfplots\pgfplots.sty (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.revision.tex)
+Package: pgfplots 2021/05/15 v1.18.1 Data Visualization (1.18.1)
+ (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.code.tex (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscore.code.tex
+\t@pgfplots@toka=\toks45
+\t@pgfplots@tokb=\toks46
+\t@pgfplots@tokc=\toks47
+\pgfplots@tmpa=\dimen361
+\c@pgfplots@coordindex=\count392
+\c@pgfplots@scanlineindex=\count393
+ (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgfplotssysgeneric.code.tex)) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgfplotslibrary.code.tex) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_loader.code.tex (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryfpu.code.tex)
+Package pgfplots: loading complementary utilities for your pgf version...
+\t@pgf@toka=\toks48
+\t@pgf@tokb=\toks49
+\t@pgf@tokc=\toks50
+(C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/oldpgfcompatib\pgfplotsoldpgfsupp_pgfutil-common-lists.tex)) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.code.tex (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructure.code.tex) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsliststructureext.code.tex) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsarray.code.tex
+\c@pgfplotsarray@tmp=\count394
+) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsmatrix.code.tex) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/numtable\pgfplotstableshared.code.tex
+\c@pgfplotstable@counta=\count395
+\t@pgfplotstable@a=\toks51
+) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/liststructure\pgfplotsdeque.code.tex) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.code.tex (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsbinary.data.code.tex)) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotsutil.verb.code.tex) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\pgflibrarypgfplots.surfshading.code.tex
+\c@pgfplotslibrarysurf@no=\count396
+ (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/sys\pgflibrarypgfplots.surfshading.pgfsys-pdftex.def))) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolormap.code.tex (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/util\pgfplotscolor.code.tex)
+LaTeX Font Info:    Trying to load font information for T1+qtm on input line 2482.
  (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\t1qtm.fd
 File: t1qtm.fd 2009/09/25 v1.2 font definition file for T1/qtm
-) (main-pt.aux
+)) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsstackedplots.code.tex) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsplothandlers.code.tex (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplothandler.code.tex (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsmeshplotimage.code.tex))) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.scaling.code.tex) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotscoordprocessing.code.tex) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.errorbars.code.tex) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.markers.code.tex) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplotsticks.code.tex) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots\pgfplots.paths.code.tex) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.code.tex (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/modules\pgfmoduledecorations.code.tex
+\pgfdecoratedcompleteddistance=\dimen362
+\pgfdecoratedremainingdistance=\dimen363
+\pgfdecoratedinputsegmentcompleteddistance=\dimen364
+\pgfdecoratedinputsegmentremainingdistance=\dimen365
+\pgf@decorate@distancetomove=\dimen366
+\pgf@decorate@repeatstate=\count397
+\pgfdecorationsegmentamplitude=\dimen367
+\pgfdecorationsegmentlength=\dimen368
+)
+\tikz@lib@dec@box=\box99
+) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathmorphing.code.tex (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathmorphing.code.tex)) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibrarydecorations.pathreplacing.code.tex (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries/decorations\pgflibrarydecorations.pathreplacing.code.tex)) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgfplots/libs\tikzlibrarypgfplots.contourlua.code.tex)
+\pgfplots@numplots=\count398
+\pgfplots@xmin@reg=\dimen369
+\pgfplots@xmax@reg=\dimen370
+\pgfplots@ymin@reg=\dimen371
+\pgfplots@ymax@reg=\dimen372
+\pgfplots@zmin@reg=\dimen373
+\pgfplots@zmax@reg=\dimen374
+) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/frontendlayer/tikz/libraries\tikzlibraryplotmarks.code.tex
+File: tikzlibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+ (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/generic/pgf/libraries\pgflibraryplotmarks.code.tex
+File: pgflibraryplotmarks.code.tex 2025-08-29 v3.1.11a (3.1.11a)
+))) (main-pt.aux
 Package babel Info: 'portuguese' activates 'portuges' shorthands.
 (babel)             Reported on input line 13.
 )
 \openout1 = `main-pt.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 84.
-LaTeX Font Info:    ... okay on input line 84.
-Package hyperref Info: Link coloring ON on input line 84.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 90.
+LaTeX Font Info:    ... okay on input line 90.
+Package hyperref Info: Link coloring ON on input line 90.
  (main-pt.out) (main-pt.out)
 \@outlinefile=\write4
 \openout4 = `main-pt.out'.
 
  (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count392
-\scratchdimen=\dimen361
-\scratchbox=\box99
-\nofMPsegments=\count393
-\nofMParguments=\count394
-\everyMPshowfont=\toks45
-\MPscratchCnt=\count395
-\MPscratchDim=\dimen362
-\MPnumerator=\count396
-\makeMPintoPDFobject=\count397
-\everyMPtoPDFconversion=\toks46
+\scratchcounter=\count399
+\scratchdimen=\dimen375
+\scratchbox=\box100
+\nofMPsegments=\count400
+\nofMParguments=\count401
+\everyMPshowfont=\toks52
+\MPscratchCnt=\count402
+\MPscratchDim=\dimen376
+\MPnumerator=\count403
+\makeMPintoPDFobject=\count404
+\everyMPtoPDFconversion=\toks53
 ) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
 ))
-LaTeX Info: Redefining \microtypecontext on input line 84.
-Package microtype Info: Applying patch `item' on input line 84.
-Package microtype Info: Applying patch `toc' on input line 84.
-Package microtype Info: Applying patch `eqnum' on input line 84.
-Package microtype Info: Applying patch `footnote' on input line 84.
-Package microtype Info: Applying patch `verbatim' on input line 84.
-LaTeX Info: Redefining \microtypesetup on input line 84.
+LaTeX Info: Redefining \microtypecontext on input line 90.
+Package microtype Info: Applying patch `item' on input line 90.
+Package microtype Info: Applying patch `toc' on input line 90.
+Package microtype Info: Applying patch `eqnum' on input line 90.
+Package microtype Info: Applying patch `footnote' on input line 90.
+Package microtype Info: Applying patch `verbatim' on input line 90.
+LaTeX Info: Redefining \microtypesetup on input line 90.
 Package microtype Info: Generating PDF output.
 Package microtype Info: Character protrusion enabled (level 2).
 Package microtype Info: Using default protrusion set `alltext'.
@@ -860,8 +905,8 @@ Package microtype Info: No adjustment of character kerning.
  (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-ptm.cfg
 File: mt-ptm.cfg 2006/04/20 v1.7 microtype config. file: Times (RS)
 )
-\c@mv@tabular=\count398
-\c@mv@boldtabular=\count399
+\c@mv@tabular=\count405
+\c@mv@boldtabular=\count406
 Package caption Info: Begin \AtBeginDocument code.
 Package caption Info: End \AtBeginDocument code.
 
@@ -899,99 +944,96 @@ Package caption Info: End \AtBeginDocument code.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-LaTeX Font Info:    Trying to load font information for T1+FiraSans-OsF on input line 138.
+Package pgfplots notification 'compat/show suggested version=true': document has been generated with the most recent feature set (\pgfplotsset{compat=1.18}).
+
+LaTeX Font Info:    Trying to load font information for T1+FiraSans-OsF on input line 136.
 (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/fira\t1firasans-osf.fd
 File: T1FiraSans-OsF.fd 2019/10/10 (autoinst) Font definitions for T1/FiraSans-OsF.
 )
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <8> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 138.
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 136.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 8.0pt on input line 138.
+(Font)              scaled to size 8.0pt on input line 136.
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `FiraSans-OsF' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/sc' in size <8> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/sc' tried instead on input line 138.
+(Font)              Font shape `T1/FiraSans-OsF/bold/sc' tried instead on input line 136.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/sc' will be
-(Font)              scaled to size 8.0pt on input line 138.
+(Font)              scaled to size 8.0pt on input line 136.
  (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-cmr.cfg
 File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msa on input line 138.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 136.
  (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 ) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msa.cfg
 File: mt-msa.cfg 2006/02/04 v1.1 microtype config. file: AMS symbols (a) (RS)
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 138.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 136.
  (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/amsfonts\umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ) (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/microtype\mt-msb.cfg
 File: mt-msb.cfg 2005/06/01 v1.0 microtype config. file: AMS symbols (b) (RS)
 )
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <18> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 138.
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 136.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 18.0pt on input line 138.
+(Font)              scaled to size 18.0pt on input line 136.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <14> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 138.
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 136.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 14.0pt on input line 138.
+(Font)              scaled to size 14.0pt on input line 136.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/it' in size <14> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/it' tried instead on input line 138.
+(Font)              Font shape `T1/FiraSans-OsF/bold/it' tried instead on input line 136.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/it' will be
-(Font)              scaled to size 14.0pt on input line 138.
+(Font)              scaled to size 14.0pt on input line 136.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/sl/n' in size <10> not available
-(Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 138.
+(Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 136.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/book/n' will be
-(Font)              scaled to size 10.0pt on input line 138.
+(Font)              scaled to size 10.0pt on input line 136.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/sl/n' in size <8> not available
-(Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 138.
+(Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 136.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/book/n' will be
-(Font)              scaled to size 8.0pt on input line 138.
-LaTeX Font Info:    Trying to load font information for U+fontawesometwo on input line 138.
+(Font)              scaled to size 8.0pt on input line 136.
+LaTeX Font Info:    Trying to load font information for U+fontawesometwo on input line 136.
  (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome\ufontawesometwo.fd
 File: ufontawesometwo.fd 2016/05/22 Font definitions for U/fontawesometwo.
 )
 
 LaTeX Font Warning: Font shape `U/fontawesometwo/sl/n' undefined
-(Font)              using `U/fontawesometwo/m/n' instead on input line 138.
+(Font)              using `U/fontawesometwo/m/n' instead on input line 136.
 
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/sl/it' in size <8> not available
-(Font)              Font shape `T1/FiraSans-OsF/book/it' tried instead on input line 138.
+(Font)              Font shape `T1/FiraSans-OsF/book/it' tried instead on input line 136.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/book/it' will be
-(Font)              scaled to size 8.0pt on input line 138.
+(Font)              scaled to size 8.0pt on input line 136.
 
 LaTeX Font Warning: Font shape `U/fontawesometwo/m/it' undefined
-(Font)              using `U/fontawesometwo/m/n' instead on input line 138.
+(Font)              using `U/fontawesometwo/m/n' instead on input line 136.
 
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/sl/n' in size <9> not available
-(Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 138.
+(Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 136.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/book/n' will be
-(Font)              scaled to size 9.0pt on input line 138.
+(Font)              scaled to size 9.0pt on input line 136.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <9> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 138.
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 136.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 9.0pt on input line 138.
+(Font)              scaled to size 9.0pt on input line 136.
 
-Overfull \hbox (66.0pt too wide) in paragraph at lines 138--138
-[][]  
- []
-
-
-Overfull \hbox (66.0pt too wide) in paragraph at lines 138--138
+Overfull \hbox (66.0pt too wide) in paragraph at lines 136--136
 [][]  
  []
 
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/sl/n' in size <14> not available
-(Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 141.
+(Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 139.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/book/n' will be
-(Font)              scaled to size 14.0pt on input line 141.
+(Font)              scaled to size 14.0pt on input line 139.
 
-Underfull \vbox (badness 5288) has occurred while \output is active []
+Underfull \vbox (badness 6412) has occurred while \output is active []
 
-LaTeX Font Info:    Trying to load font information for U+fontawesomeone on input line 171.
+LaTeX Font Info:    Trying to load font information for U+fontawesomeone on input line 169.
  (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/fontawesome\ufontawesomeone.fd
 File: ufontawesomeone.fd 2016/05/22 Font definitions for U/fontawesomeone.
 )
@@ -1006,73 +1048,154 @@ Package fancyhdr Warning: \headheight is too small (36.90002pt):
 
 
 ]
+Underfull \hbox (badness 10000) in paragraph at lines 216--217
+[]\T1/qtm/m/n/9 (+20) Redimensionamento da ima-
+ []
+
+
+Underfull \hbox (badness 4229) in paragraph at lines 216--217
+\T1/qtm/m/n/9 (+20) gem para $\OT1/cmr/m/n/9 224 \OMS/cmsy/m/n/9 ^^B \OT1/cmr/m/n/9 224$ \T1/qtm/m/n/9 (+20) pi-xels e
+ []
+
+
+Underfull \hbox (badness 1052) in paragraph at lines 219--221
+[]\T1/qtm/m/n/9 (+20) Extração au-to-má-tica de atri-bu-tos
+ []
+
+
+Underfull \hbox (badness 1552) in paragraph at lines 219--221
+\T1/qtm/m/n/9 (+20) vi-su-ais pela ar-qui-te-tura Ef-fi-ci-ent-
+ []
+
+
+Overfull \hbox (16.15794pt too wide) in paragraph at lines 208--228
+ [][] 
+ []
+
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/sl/n' in size <12> not available
-(Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 194.
+(Font)              Font shape `T1/FiraSans-OsF/book/n' tried instead on input line 230.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/book/n' will be
-(Font)              scaled to size 12.0pt on input line 194.
+(Font)              scaled to size 12.0pt on input line 230.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/b/n' in size <12> not available
-(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 194.
+(Font)              Font shape `T1/FiraSans-OsF/bold/n' tried instead on input line 230.
 LaTeX Font Info:    Font shape `T1/FiraSans-OsF/bold/n' will be
-(Font)              scaled to size 12.0pt on input line 194.
+(Font)              scaled to size 12.0pt on input line 230.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
  [2] [3]
 Package microtype Info: Loading generic protrusion settings for font family
 (microtype)             `cmtt' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 
-Overfull \hbox (9.55396pt too wide) in paragraph at lines 394--416
+Overfull \hbox (9.55396pt too wide) in paragraph at lines 408--430
  [][] 
  []
 
 [4]
 
-LaTeX Warning: Command \c invalid in math mode on input line 489.
+LaTeX Warning: Command \c invalid in math mode on input line 503.
 
 Missing character: There is no ç in font cmr7!
 
-LaTeX Warning: Command \c invalid in math mode on input line 513.
+LaTeX Warning: Command \c invalid in math mode on input line 527.
 
 
-LaTeX Warning: Command \c invalid in math mode on input line 513.
+LaTeX Warning: Command \c invalid in math mode on input line 527.
 
 Missing character: There is no ç in font cmr10!
 Missing character: There is no ç in font cmr7!
 
-LaTeX Warning: Command \c invalid in math mode on input line 550.
+LaTeX Warning: Command \c invalid in math mode on input line 566.
 
 Missing character: There is no ç in font cmr6!
 
-LaTeX Warning: Command \c invalid in math mode on input line 558.
+LaTeX Warning: Command \c invalid in math mode on input line 574.
 
 Missing character: There is no ç in font cmr6!
 
-LaTeX Warning: Command \c invalid in math mode on input line 559.
+LaTeX Warning: Command \c invalid in math mode on input line 575.
 
 Missing character: There is no ç in font cmr6!
-[5] [6] (main-pt.bbl
-Underfull \hbox (badness 2213) in paragraph at lines 23--28
+[5]
+LaTeX Font Info:    Trying to load font information for TS1+qtm on input line 776.
+ (C:\Users\Maria\AppData\Local\Programs\MiKTeX\tex/latex/tex-gyre\ts1qtm.fd
+File: ts1qtm.fd 2009/09/25 v1.2 font definition file for TS1/qtm
+) [6{C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/tex-gyre/q-ts1.enc}] [7]
+Underfull \hbox (badness 4156) in paragraph at lines 1015--1015
+[]\T1/qtm/m/n/7 (+20) Queima das fo-lhas do mi-lho (Corn
+ []
+
+
+Underfull \vbox (badness 2080) has occurred while \output is active []
+
+ [8]
+<login_cadastro.jpg, id=261, 791.20593pt x 618.81187pt>
+File: login_cadastro.jpg Graphic file (type jpg)
+<use login_cadastro.jpg>
+Package pdftex.def Info: login_cadastro.jpg  used on input line 1092.
+(pdftex.def)             Requested size: 240.0pt x 187.70341pt.
+<inicio.jpeg, id=264, 1606.0pt x 794.97pt>
+File: inicio.jpeg Graphic file (type jpg)
+<use inicio.jpeg>
+Package pdftex.def Info: inicio.jpeg  used on input line 1108.
+(pdftex.def)             Requested size: 240.0pt x 118.79153pt.
+<inicio_plantas.jpeg, id=265, 1606.0pt x 828.09375pt>
+File: inicio_plantas.jpeg Graphic file (type jpg)
+<use inicio_plantas.jpeg>
+Package pdftex.def Info: inicio_plantas.jpeg  used on input line 1115.
+(pdftex.def)             Requested size: 240.0pt x 123.74118pt.
+<detectar.jpeg, id=267, 1606.0pt x 804.00375pt>
+File: detectar.jpeg Graphic file (type jpg)
+<use detectar.jpeg>
+Package pdftex.def Info: detectar.jpeg  used on input line 1128.
+(pdftex.def)             Requested size: 240.0pt x 120.14143pt.
+<planta_health.jpeg, id=270, 1606.0pt x 831.105pt>
+File: planta_health.jpeg Graphic file (type jpg)
+<use planta_health.jpeg>
+Package pdftex.def Info: planta_health.jpeg  used on input line 1140.
+(pdftex.def)             Requested size: 240.0pt x 124.19115pt.
+<resultado_nao_baseset.jpeg, id=271, 1606.0pt x 833.1125pt>
+File: resultado_nao_baseset.jpeg Graphic file (type jpg)
+<use resultado_nao_baseset.jpeg>
+Package pdftex.def Info: resultado_nao_baseset.jpeg  used on input line 1147.
+(pdftex.def)             Requested size: 240.0pt x 124.49112pt.
+ [9 <./login_cadastro.jpg> <./inicio.jpeg> <./inicio_plantas.jpeg> <./detectar.jpeg> <./planta_health.jpeg>]
+<historico.jpeg, id=284, 1606.0pt x 833.1125pt>
+File: historico.jpeg Graphic file (type jpg)
+<use historico.jpeg>
+Package pdftex.def Info: historico.jpeg  used on input line 1164.
+(pdftex.def)             Requested size: 240.0pt x 124.49112pt.
+ [10 <./resultado_nao_baseset.jpeg> <./historico.jpeg>] (main-pt.bbl [11]
+Underfull \hbox (badness 2213) in paragraph at lines 24--29
 []\T1/qtm/m/n/10 (+20) Farias, K. and Laz-zari, L. (2023).  Event-driven ar-
  []
 
 
-Underfull \hbox (badness 6842) in paragraph at lines 23--28
+Underfull \hbox (badness 6842) in paragraph at lines 24--29
 \T1/qtm/m/n/10 (+20) chi-tec-ture and rest ar-chi-tec-tu-ral style: An ex-plo-
  []
 
 
-Underfull \hbox (badness 4660) in paragraph at lines 23--28
+Underfull \hbox (badness 4660) in paragraph at lines 24--29
 \T1/qtm/m/n/10 (+20) ra-tory study on mo-du-la-rity.  \T1/qtm/m/it/10 (+20) Jour-nal of Ap-plied
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 23--28
+Underfull \hbox (badness 10000) in paragraph at lines 24--29
 \T1/qtm/m/it/10 (+20) Re-se-arch and Te-ch-no-logy\T1/qtm/m/n/10 (+20) , 21(3):338--351. DOI:
  []
 
 
-Underfull \vbox (badness 3590) has occurred while \output is active []
+Underfull \hbox (badness 2326) in paragraph at lines 64--68
+\T1/qtm/m/n/10 (+20) tec-tion.  \T1/qtm/m/it/10 (+20) Fron-ti-ers in Plant Sci-ence\T1/qtm/m/n/10 (+20) , 7:1419. DOI:
+ []
 
-) [7] (main-pt.aux)
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+) [12] (main-pt.aux)
  ***********
 LaTeX2e <2026-06-01>
 L3 programming layer <2026-05-26>
@@ -1082,20 +1205,20 @@ L3 programming layer <2026-05-26>
 LaTeX Font Warning: Some font shapes were not available, defaults substituted.
 
 Package rerunfilecheck Info: File `main-pt.out' has not changed.
-(rerunfilecheck)             Checksum: 68636DE42BBDDA2258DD9375F3868D43;2575.
+(rerunfilecheck)             Checksum: 8360C63F2DF7A2180D7AE9C320B1FD2A;3592.
  ) 
 Here is how much of TeX's memory you used:
- 33729 strings out of 467508
- 641818 string characters out of 5408759
- 1084278 words of memory out of 5000000
- 62069 multiletter control sequences out of 15000+600000
- 892389 words of font info for 259 fonts, out of 8000000 for 9000
+ 44289 strings out of 467508
+ 996732 string characters out of 5408759
+ 1585137 words of memory out of 5000000
+ 72442 multiletter control sequences out of 15000+600000
+ 893732 words of font info for 271 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 132i,14n,135p,1078b,949s stack positions out of 10000i,1000n,20000p,200000b,200000s
- <C:\Users\Maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\Maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-Bold.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-BoldItalic.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-Book.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-BookItalic.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome/FontAwesome.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmri.pfb>
-Output written on main-pt.pdf (7 pages, 470983 bytes).
+ 132i,19n,135p,1078b,2386s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\Maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt0900.pk> <C:\Users\Maria\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\ectt1000.pk><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-Bold.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-BoldItalic.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-Book.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fira/FiraSans-BookItalic.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/fontawesome/FontAwesome.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi6.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi7.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi8.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmmi9.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr6.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr8.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr9.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy10.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy6.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy8.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmsy9.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmb.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmr.pfb><C:/Users/Maria/AppData/Local/Programs/MiKTeX/fonts/type1/public/tex-gyre/qtmri.pfb>
+Output written on main-pt.pdf (12 pages, 1661534 bytes).
 PDF statistics:
- 370 PDF objects out of 1000 (max. 8388607)
- 49 named destinations out of 1000 (max. 500000)
- 73837 words of extra memory for PDF output out of 74296 (max. 10000000)
+ 485 PDF objects out of 1000 (max. 8388607)
+ 72 named destinations out of 1000 (max. 500000)
+ 75952 words of extra memory for PDF output out of 89155 (max. 10000000)
 

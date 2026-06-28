@@ -79,7 +79,13 @@
 
 \affil{\textbf{Neemias Cruz}~\orcidlink{0000-0002-7110-2026}~\textcolor{blue}{\faEnvelopeO}~~[{Centro Federal de Educação Tecnologica Celso Sucknow da Fonseca}~|\href{mailto:neemiascruz@hotmail.com}{{\textit{neemiascruz@hotmail.com}}}~]}
 
+\affil{\textbf{Diego Castro}~\orcidlink{0000-0003-3052-3016}~\textcolor{blue}{\faEnvelopeO}~~[{Centro Federal de Educação Tecnologica Celso Sucknow da Fonseca}~|\href{mailto:diego.castro@cefet-rj.br}{{\textit{diego.castro@cefet-rj.br}}}~]}
+
 }
+
+\usepackage{tikz}
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.18}
 
 \begin{document}
 
@@ -94,7 +100,7 @@ Centro Federal de Educação Tecnologica Celso Sucknow da Fonseca, R. Miguel Ân
 
 \begin{abstract-pt}
 Este trabalho apresenta o desenvolvimento de uma plataforma web baseada em Inteligência Artificial para a identificação de doenças em
-plantas por meio da análise de imagens de folhas. A solução foi implementada em arquitetura cliente-servidor, utilizando FastAPI,
+plantas por meio da análise de imagens de folhas. A metodologia utilizada é uma abordagem expositiva, a solução foi implementada em arquitetura cliente-servidor, utilizando FastAPI,
 JavaScript, PostgreSQL e Docker, e integra dois modelos de aprendizado profundo baseados na EfficientNetB0, responsáveis pela 
 identificação da espécie vegetal e da doença associada. Os modelos foram treinados com imagens da base PlantVillage, utilizando uma 
 abordagem de divisão hold-out entre conjuntos de treinamento e validação, visando aumentar a consistência dos diagnósticos. Além disso,
@@ -106,7 +112,7 @@ da agricultura digital e do diagnóstico fitossanitário.
 
 \begin{abstract-en}
 This work presents the development of a web platform based on Artificial Intelligence for the identification of plant diseases 
-through the analysis of leaf images. The solution was implemented in a client-server architecture, using FastAPI, JavaScript, 
+through the analysis of leaf images.The methodology employs an expository approach, the solution was implemented in a client-server architecture, using FastAPI, JavaScript, 
 PostgreSQL, and Docker, and integrates two deep learning models based on EfficientNetB0, responsible for identifying the plant 
 species and the associated disease. The models were trained with images from the PlantVillage database, using a hold-out split
 approach between training and validation sets, increasing the consistency of diagnoses. In addition, the 
@@ -122,14 +128,6 @@ Visão Computacional, Aprendizado Profundo, Agricultura Digital
 \begin{keywords}
 Computer Vision, Deep Learning, Digital Agriculture
 \end{keywords}
-
-\begin{dates}
-% This information will be provided by the editor before publishing the paper
-\noindent{\sffamily\textbf{Recebido/Received:}} DD Month YYYY~~~$\bullet$~~~
-{\sffamily\textbf{Aceito/Accepted:}} DD Month YYYY~~~$\bullet$~~~
-{\sffamily\textbf{Publicado/Published:}} DD Month YYYY
-\end{dates}
-
 
 %\begin{license}
 %Published under the Creative Commons Attribution 4.0 International Public License (CC BY 4.0)
@@ -177,7 +175,7 @@ validação, capazes de reduzir ambiguidades e aumentar a confiabilidade dos dia
 Diante desse cenário, o presente trabalho tem como objetivo desenvolver uma plataforma web inteligente para identificação automática
 de doenças em plantas por meio de técnicas de Inteligência Artificial e Visão Computacional. A solução proposta baseia-se em uma 
 arquitetura cliente-servidor e combina dois modelos especializados, sendo um destinado à identificação da espécie vegetal e outro 
-à classificação da doença. Adicionalmente, foram implementados estratégias de validação dos resultados baseadas na análise de compatibilidade entre 
+à classificação da doença. Adicionalmente, foram implementadas estratégias de validação dos resultados baseadas na análise de compatibilidade entre 
 planta e doença e cálculo do nível de confiança das predições, visando reduzir inconsistências e aumentar a confiabilidade dos 
 resultados. A plataforma também contempla funcionalidades de autenticação de usuários, armazenamento do histórico de diagnósticos 
 e geração automática de informações textuais complementares, constituindo uma solução integrada voltada ao apoio à tomada de decisão
@@ -189,7 +187,45 @@ no contexto da agricultura digital \citep{ref6}.
 Esta pesquisa caracteriza-se como aplicada, quantitativa e experimental, tendo como objetivo o desenvolvimento e a avaliação de 
 uma plataforma web para identificação de doenças em plantas por meio da análise de imagens de folhas. A solução 
 emprega técnicas de Visão Computacional e Aprendizado Profundo para apoiar o diagnóstico fitossanitário e contribuir para 
-aplicações de agricultura digital e agricultura de precisão \citep{ref1}.
+aplicações de agricultura digital e agricultura de precisão \citep{ref1,ref2}.
+
+No contexto deste trabalho, a Visão Computacional é aplicada ao processamento automático de imagens de folhas, permitindo que
+o sistema extraia informações visuais relevantes e identifique a espécie vegetal e a doença associada. De forma geral, um 
+sistema de Visão Computacional é composto por quatro etapas principais: aquisição da imagem, pré-processamento, extração de 
+características e interpretação dos resultados. Com a utilização de arquiteturas de Aprendizado Profundo, como a EfficientNetB0,
+a etapa de extração de características passa a ser realizada automaticamente pela rede neural, reduzindo a necessidade de 
+engenharia manual de atributos \citep{ref23}.
+
+A Tabela \ref{tab:etapas_vc} relaciona esses quatro etapas com sua implementação na plataforma desenvolvida, indica como
+cada etapa do pipeline de Visão Computacional está presente na solução proposta.
+
+\begin{table}[ht]
+\centering
+\caption{Relação entre as etapas da Visão Computacional e sua implementação no sistema proposto.}
+\renewcommand{\arraystretch}{1.15}
+\setlength{\tabcolsep}{5pt}
+{\small
+\begin{tabular}{p{3.8cm} p{4.5cm}}
+\hline
+\textbf{Etapas da Visão Computacional} & \textbf{Implementação no sistema proposto} \\
+\hline
+Aquisição da imagem &
+Captura da fotografia da folha por meio do envio (\textit{upload}) realizado pelo usuário na interface web. \\
+
+Pré-processamento &
+Redimensionamento da imagem para $224\times224$ pixels e normalização utilizando a função \textit{preprocess\_input} da EfficientNetB0. \\
+
+Extração de características &
+Extração automática de atributos visuais pela arquitetura EfficientNetB0, empregando Aprendizado Profundo, aprendizado por 
+transferência (\textit{Transfer Learning}) e ajuste fino (\textit{Fine-Tuning}). \\
+
+Interpretação e tomada de decisão &
+Classificação da espécie vegetal e da doença, validação da compatibilidade entre as predições e cálculo do nível de confiança do diagnóstico. \\
+\hline
+\end{tabular}
+}
+\label{tab:etapas_vc}
+\end{table}
 
 \subsection{Arquitetura e Implementação da Plataforma}
 
@@ -239,38 +275,17 @@ contêineres Docker oferecem ambientes leves e consistentes para o desenvolvimen
 
 \subsection{Interface Web e Comunicação Cliente-Servidor}
 
-Na camada de apresentação, foram empregadas as tecnologias HTML5, CSS3 e JavaScript para a construção da interface web da aplicação. 
-O HTML5 foi utilizado na organização semântica dos elementos das páginas, enquanto o CSS3 foi responsável pela definição dos estilos
-visuais e pela implementação de layouts responsivos. A integração dessas tecnologias permite o desenvolvimento de interfaces 
-flexíveis e adaptáveis a diferentes dispositivos e resoluções de tela. Segundo \citep{ref13}, a abordagem de design responsivo 
-baseada em HTML5 e CSS constitui um dos principais fundamentos para o desenvolvimento de aplicações web modernas, proporcionando 
-maior compatibilidade e melhor experiência de uso em diferentes ambientes de acesso.
+A camada de front-end foi desenvolvida utilizando HTML5, CSS3 e JavaScript, integrados ao backend implementado em FastAPI. O sistema 
+contempla funcionalidades de autenticação, cadastro de usuários, envio e pré-visualização de imagens, visualização dos diagnósticos, 
+textos complementares e a consulta ao histórico das análises, além de interface responsiva para diferentes dispositivos \citep{ref13}.
 
-A interface foi desenvolvida com foco na experiência do usuário e na adaptação a diferentes dispositivos, contemplando funcionalidades 
-de autenticação, cadastro de usuários, envio e pré-visualização de imagens, visualização dos resultados produzidos pelos modelos de 
-Inteligência Artificial e consulta ao histórico dos diagnósticos realizados. De acordo com \citep{ref13}, a abordagem de design 
-responsivo baseada em HTML5 e CSS possibilita a construção de interfaces flexíveis e adaptáveis, proporcionando uma experiência de 
-navegação mais consistente em diferentes dispositivos e ambientes de acesso.
-
-Os recursos de interatividade foram implementados utilizando JavaScript em sua forma nativa (Vanilla JavaScript), dispensando a 
-utilização de frameworks adicionais. Dessa forma, foi possível desenvolver mecanismos de manipulação dinâmica do Document Object 
-Model (DOM), validação de formulários, gerenciamento das sessões dos usuários e atualização assíncrona das informações exibidas na
-interface. Conforme \citep{ref14}, JavaScript constitui uma das principais linguagens para o desenvolvimento de aplicações web 
-interativas, oferecendo mecanismos para manipulação dinâmica dos elementos da página e execução de operações assíncronas. 
-
-A comunicação entre a interface e a API foi realizada por meio de requisições HTTPS assíncronas, utilizando a API Fetch para o 
-envio e recebimento de dados em formato JSON. Esse mecanismo possibilita a atualização parcial das páginas sem a necessidade de
-recarregamento completo, proporcionando maior fluidez na interação com o sistema. Estudos demonstram que a integração entre os 
-componentes cliente e servidor em aplicações web baseadas em comunicação assíncrona favorece a construção de sistemas mais dinâmicos,
-interativos e eficientes \citep{ref15}.
+Os recursos de interatividade foram implementados em JavaScript nativo (Vanilla JavaScript), incluindo manipulação dinâmica do DOM, 
+validação de formulários, gerenciamento de sessões e atualização assíncrona das informações exibidas. A comunicação entre a interface 
+e a API ocorre por meio de requisições HTTPS utilizando a API Fetch e troca de dados em formato JSON, proporcionando maior fluidez na 
+interação com o sistema \citep{ref14,ref15}.
 
 O gerenciamento das informações de sessão no lado do cliente foi realizado por meio da Web Storage API, permitindo a persistência 
-temporária de dados entre diferentes páginas da aplicação. Além disso, foram implementados mecanismos de controle de acesso e
-redirecionamento automático, restringindo funcionalidades específicas aos usuários autenticados. A utilização de mecanismos de 
-armazenamento no navegador favorece a persistência de informações necessárias à execução da aplicação e ao gerenciamento das 
-interações com os usuários. De acordo com \citep{ref16}, os recursos de armazenamento no lado do cliente constituem 
-componentes relevantes no funcionamento das aplicações web modernas, possibilitando a manutenção de informações entre diferentes 
-sessões de navegação.
+temporária de dados e o controle de acesso às funcionalidades restritas da plataforma \citep{ref16}.
 
 \begin{figure}[ht]
 \centering
@@ -354,7 +369,7 @@ Nesse contexto, a separação não é realizada dinamicamente durante a execuç�
 base de dados em diretórios distintos. Essa abordagem garante que a divisão entre os conjuntos permaneça fixa e consistente entre
 diferentes execuções dos experimentos, contribuindo para a reprodutibilidade dos resultados.
 
-A divisão adotada mantém aproximadamente 80\% das amostras para treinamento e 20\% para validação. O conjunto de treinamento é 
+A divisão adotada mantém 80\% das amostras para treinamento e 20\% para validação. O conjunto de treinamento é 
 utilizado exclusivamente para o ajuste dos pesos da rede neural, enquanto o conjunto de validação é empregado apenas para 
 monitoramento do desempenho do modelo em dados não vistos, sem influência direta no processo de otimização.
 
@@ -363,9 +378,8 @@ reprodutibilidade na ordenação e amostragem das imagens. Dessa forma, minimiza
 maior confiabilidade na comparação dos resultados experimentais.
 
 As imagens foram redimensionadas para $224 \times 224$ pixels e processadas em lotes de 16 amostras, utilizando-se a mesma 
-etapa de pré-processamento empregada durante o treinamento. O desempenho foi mensurado por meio da métrica de acurácia e 
-complementado pelas métricas de precisão (\textit{precision}), revocação (\textit{recall}) e F1-score, frequentemente utilizadas
-em problemas de classificação multiclasse \citep{ref20}.
+etapa de pré-processamento empregada durante o treinamento. O desempenho foi mensurado por meio da métrica de acurácia 
+frequentemente utilizadas em problemas de classificação \citep{ref20}.
 
 Com o objetivo de aumentar a variabilidade dos dados e reduzir o sobreajuste, foram aplicadas técnicas de aumento de dados 
 (\textit{Data Augmentation}), incluindo rotações aleatórias e inversões horizontais das imagens. Além disso, foi utilizado o 
@@ -379,7 +393,7 @@ possibilitam adaptar os conhecimentos previamente adquiridos ao domínio especí
 generalização do modelo \citep{ref20,ref21}.
 
 Para reduzir o risco de sobreajuste e tornar o treinamento mais estável, foram utilizados os mecanismos de parada antecipada 
-(\textit{Early Stopping}) e ajuste adaptativo da taxa de aprendizado (\textit{ReduceLROnPlateau}) \citep{ref22}.
+(\textit{Early Stopping}) e ajuste adaptativo da taxa de aprendizado (\textit{ReduceLROnPlateau}).
 
 Ao final do processo, foram obtidos dois modelos independentes, armazenados no formato \texttt{.keras}, juntamente com arquivos 
 JSON contendo os nomes das classes. Um dos modelos foi destinado à identificação da espécie vegetal e o outro à classificação das
@@ -496,7 +510,7 @@ compatível seja encontrado, o sistema recorre a uma estratégia de \textit{fall
 modelo de doenças, associada à melhor correspondência disponível no modelo de plantas.
 
 Casos específicos são tratados por regras adaptativas. Para culturas com baixa representatividade no conjunto de dados, como
-\textit{Blueberry}, \textit{Raspberry}, \textit{Orange} e \textit{Cherry}, a confiança final é obtida diretamente a partir 
+\textit{Blueberry(Mirtilo)}, \textit{Raspberry(Framboesa)}, \textit{Orange(laranja)}, \textit{Cherry(Cereja)} e \textit{Soybean(Soja)}, a confiança final é obtida diretamente a partir 
 da probabilidade produzida pelo modelo de doenças, reduzindo a influência do classificador de plantas. Já para a cultura
 \textit{Tomato}, são aplicados ajustes adicionais baseados na distribuição das probabilidades, com análise de múltiplas 
 classes candidatas, visando reduzir ambiguidades entre doenças visualmente semelhantes.
@@ -536,37 +550,41 @@ arrow/.style={->, thick}
 {Pré-processamento\\
 Redimensionamento ($224\times224$)\\
 Normalização};
-\node[box] (plant) at (-3.2,-4.5)
+\coordinate (fork) at (0,-3.1);
+\node[box] (plant) at (-3.2,-5)
 {Modelo de Planta\\
 EfficientNetB0\\
 Probabilidades das espécies};
-\node[box] (disease) at (3.2,-4.5)
+\node[box] (disease) at (3.2,-5)
 {Modelo de Doença\\
 EfficientNetB0\\
 Probabilidades das doenças};
-\node[box,text width=5.8cm] (selection) at (0,-7.5)
+\coordinate (join) at (0,-6.8);
+\node[box,text width=5.8cm] (selection) at (0,-8.7)
 {Seleção do par planta-doença\\
 Top-3 plantas + Top-5 doenças\\
 Score = $0,6P_{doença}+0,4P_{planta}+B$};
-\node[box,text width=5.8cm] (rules) at (0,-10)
+\node[box,text width=5.8cm] (rules) at (0,-11.2)
 {Regras adaptativas\\
 Compatibilidade biológica\\
 Correções para Tomato e falso healthy\\
 Fallback quando necessário};
-\node[box,text width=5.8cm] (confidence) at (0,-12.5)
+\node[box,text width=5.8cm] (confidence) at (0,-13.8)
 {Cálculo da confiança final\\
 $\mathrm{Conf}=0,65P_{doença}+0,35P_{planta}$\\
 ou apenas $P_{doença}$ para plantas com poucos dados};
-\node[box] (output) at (0,-15)
+\node[box] (output) at (0,-16.3)
 {Resultado final\\
 Planta identificada\\
 Doença identificada\\
 Nível de confiança};
 \draw[arrow] (input) -- (preproc);
-\draw[arrow] (preproc) -- (plant);
-\draw[arrow] (preproc) -- (disease);
-\draw[arrow] (plant) -- (selection);
-\draw[arrow] (disease) -- (selection);
+\draw[arrow] (preproc) -- (fork);
+\draw[arrow] (fork) -| (plant);
+\draw[arrow] (fork) -| (disease);
+\draw[arrow] (plant) |- (join);
+\draw[arrow] (disease) |- (join);
+\draw[arrow] (join) -- (selection);
 \draw[arrow] (selection) -- (rules);
 \draw[arrow] (rules) -- (confidence);
 \draw[arrow] (confidence) -- (output);
@@ -594,67 +612,677 @@ Essa decisão foi adotada para evitar riscos decorrentes de possíveis erros de 
 poderiam levar a ações inadequadas e impactos ambientais indesejados.
 
 Dessa forma, o módulo é restrito à geração de informações de caráter educativo e informativo, não devendo ser interpretado como 
-substituto de orientação técnica especializada. Conforme descrito por \citep{ref23}, modelos de linguagem de grande porte apresentam 
+substituto de orientação técnica especializada. Conforme descrito por \citep{ref22}, modelos de linguagem de grande porte apresentam 
 elevada capacidade de geração de texto contextualizado, sendo amplamente utilizados em aplicações de apoio à comunicação e 
 disseminação de conhecimento.
 
-\section{Resultados e Discussões}
-\label{sec:Resultados e Discussões}
-\subsection{Avaliação dos Modelos}
+\section{Resultados e Discussão}
+\label{sec:Resultados e Discussão}
 
-A avaliação dos modelos foi realizada utilizando os subconjuntos de validação disponibilizados na organização da base 
-PlantVillage, correspondentes da divisão fixa do tipo Hold-out, na qual aproximadamente 80\% das imagens são utilizadas para
-treinamento e cerca de 20\% das imagens para validação. O desempenho dos classificadores foi analisado a partir das previsões obtidas sobre
-esse conjunto, permitindo verificar a capacidade de generalização dos modelos para amostras não utilizadas durante o treinamento.
+\subsection{Avaliação do Treinamento e Validação}
 
-Para a classificação das espécies vegetais, o modelo baseado na arquitetura EfficientNetB0 apresentou elevada capacidade de 
-generalização, alcançando acurácia superior a 96\% sobre o conjunto de validação. De forma semelhante, o modelo destinado à 
-identificação das doenças atingiu acurácia próxima de 98\% evidenciando a eficiência da estratégia baseada em aprendizado por
-transferência e ajuste fino das camadas mais profundas da rede.
+A avaliação dos modelos foi realizada utilizando o conjunto de validação disponibilizado pela base PlantVillage, seguindo a estratégia
+de divisão fixa do tipo \textit{Hold-out}, na qual 80\% das imagens foram destinadas ao treinamento e os 20\% restantes 
+à validação. Essa abordagem permite estimar a capacidade de generalização do modelo em amostras não utilizadas durante o processo 
+de aprendizado, reduzindo a possibilidade de superestimação do desempenho.
 
-Além da acurácia global, foram analisadas as matrizes de confusão dos modelos, permitindo identificar as principais ocorrências
-de classificações incorretas. Observou-se que a maior parte dos erros concentrou-se entre classes que apresentam características
-visuais semelhantes, especialmente em doenças foliares com sintomas próximos ou em estágios iniciais de desenvolvimento. 
-Esse comportamento é consistente com resultados encontrados na literatura sobre classificação automática de doenças em 
-plantas baseada em Visão Computacional \citep{ref2}.
+Os resultados obtidos demonstram elevada capacidade de classificação para ambas as tarefas propostas. Na primeira fase,
+\textit{Transfer Learning} alcançou acurácia de 96,85\%, enquanto na segunda fase o \textit{Fine-Tuning} atingiu 
+98,81\%. Esses resultados sugerem que a combinação da arquitetura EfficientNetB0 com as técnicas de \textit{Transfer Learning},
+\textit{Data Augmentation}, regularização e refinamento dos pesos foi capaz de extrair características discriminativas dos padrões
+visuais presentes nas imagens da base PlantVillage.
 
-Os resultados obtidos indicam que a utilização da EfficientNetB0 associada às técnicas de \textit{Transfer Learning}, 
-\textit{Fine-Tuning}, aumento de dados e mecanismos de regularização contribuiu para a obtenção de modelos com elevada 
-capacidade de discriminação entre as classes, tornando-os adequados para integração à plataforma desenvolvida.
+As Figuras \ref{fig:acc_fase1} e \ref{fig:loss_fase1} apresentam a evolução da acurácia e da função de perda durante a primeira fase 
+do treinamento. Observa-se crescimento gradual da acurácia, acompanhado pela redução consistente da função de perda, indicando 
+convergência estável do processo de otimização. Além disso, as curvas de treinamento e validação permanecem próximas ao longo das 
+épocas, sem oscilações acentuadas, sugerindo boa capacidade de generalização e o mecanismo de Early Stopping foi capaz de interromper
+o treinamento antes que surgissem indícios relevantes de sobreajuste (\textit{overfitting}).
+
+Outro aspecto observado é que a acurácia de validação permaneceu superior à acurácia de treinamento durante praticamente toda a 
+primeira fase. Esse comportamento é esperado quando técnicas de regularização, como \textit{Dropout} e \textit{Data Augmentation}, 
+são aplicadas exclusivamente durante o treinamento. Como essas técnicas tornam as amostras de treinamento mais desafiadoras, 
+o modelo tende a apresentar desempenho ligeiramente inferior nesse conjunto, enquanto o conjunto de validação permanece composto por
+imagens originais, resultando em métricas superiores durante a avaliação.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.9\linewidth,
+    height=7cm,
+    xlabel={Épocas},
+    ylabel={Acurácia},
+    xmin=1, xmax=12,
+    ymin=0.78, ymax=0.98,
+    xtick={1,2,...,12},
+    ytick={0.80,0.84,0.88,0.92,0.96},
+    grid=major,
+    legend pos=south east,
+    legend style={font=\small},
+    tick label style={font=\small},
+    label style={font=\small}
+]
+\addplot[
+    blue,
+    thick,
+    mark=*,
+] coordinates {
+(1,0.800)
+(2,0.880)
+(3,0.897)
+(4,0.905)
+(5,0.911)
+(6,0.914)
+(7,0.915)
+(8,0.920)
+(9,0.925)
+(10,0.923)
+(11,0.926)
+(12,0.929)
+};
+\addlegendentry{Treinamento}
+\addplot[
+    red,
+    thick,
+    mark=square*,
+] coordinates {
+(1,0.926)
+(2,0.939)
+(3,0.948)
+(4,0.955)
+(5,0.961)
+(6,0.961)
+(7,0.960)
+(8,0.964)
+(9,0.959)
+(10,0.968)
+(11,0.969)
+(12,0.968)
+};
+\addlegendentry{Validação}
+\end{axis}
+\end{tikzpicture}
+\caption{Evolução da acurácia durante o treinamento da Fase 1.}
+\label{fig:acc_fase1}
+\end{figure}
+
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.9\linewidth,
+    height=7cm,
+    xlabel={Épocas},
+    ylabel={Loss},
+    xmin=1, xmax=12,
+    ymin=0.10, ymax=0.70,
+    xtick={1,2,...,12},
+    ytick={0.10,0.20,0.30,0.40,0.50,0.60,0.70},
+    grid=major,
+    legend pos=north east,
+    legend style={font=\small},
+    tick label style={font=\small},
+    label style={font=\small}
+]
+\addplot[
+    blue,
+    thick,
+    mark=*,
+] coordinates {
+(1,0.682)
+(2,0.395)
+(3,0.345)
+(4,0.315)
+(5,0.294)
+(6,0.280)
+(7,0.278)
+(8,0.264)
+(9,0.256)
+(10,0.249)
+(11,0.245)
+(12,0.243)
+};
+\addlegendentry{Loss Treinamento}
+\addplot[
+    red,
+    thick,
+    mark=square*,
+] coordinates {
+(1,0.243)
+(2,0.196)
+(3,0.171)
+(4,0.140)
+(5,0.122)
+(6,0.122)
+(7,0.112)
+(8,0.109)
+(9,0.124)
+(10,0.101)
+(11,0.102)
+(12,0.108)
+};
+\addlegendentry{Loss Validação}
+\end{axis}
+\end{tikzpicture}
+\caption{Evolução da função de perda durante o treinamento da Fase 1.}
+\label{fig:loss_fase1}
+\end{figure}
+
+As Figuras \ref{fig:accuracy_fase2} e \ref{fig:loss_fase2} mostram a evolução das métricas durante a etapa de \textit{Fine-Tuning}. 
+Os resultados indicam que tanto a acurácia quanto a função de perda continuam evoluindo de maneira consistente após o desbloqueio 
+das camadas profundas da EfficientNetB0, demonstrando que o refinamento dos pesos permitiu especializar a rede para o domínio de 
+doenças foliares sem comprometer sua estabilidade. A acurácia de validação aumentou progressivamente de 94,88\% na primeira época
+para 98,81\% na 14ª época, enquanto a perda de validação foi reduzida de 0,1449 para 0,0369.
+
+A proximidade entre as curvas de treinamento e validação durante o \textit{Fine-Tuning} indica que a atualização dos pesos ocorreu de
+maneira controlada, sem degradação da capacidade de generalização. Embora a perda de treinamento permaneça superior à perda de 
+validação durante toda essa etapa, esse comportamento continua sendo explicado pelo uso das técnicas de regularização e aumento de 
+dados aplicadas apenas ao conjunto de treinamento. Além disso, nota-se que a perda de validação praticamente estabiliza nas 
+últimas épocas, indicando que o modelo atingiu um ponto próximo da convergência.
+
+A melhor configuração foi obtida na 14ª época, quando a acurácia de validação atingiu 98,81\% e a função de perda alcançou seu menor 
+valor (0,0369). Na época seguinte, verificou-se uma pequena redução na acurácia de validação e um discreto aumento da perda, motivo 
+pelo qual o mecanismo de \textit{Early Stopping} restaurou automaticamente os pesos da melhor época. Esse comportamento demonstra que 
+o critério de parada adotado foi eficiente para evitar o início do sobreajuste e preservar o modelo de melhor desempenho.
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.9\linewidth,
+    height=7cm,
+    xlabel={Épocas},
+    ylabel={Acurácia},
+    xmin=1, xmax=15,
+    ymin=0.80, ymax=1.00,
+    xtick={1,2,...,15},
+    ytick={0.80,0.82,...,1.00},
+    grid=major,
+    legend pos=south east,
+    legend style={font=\small},
+    tick label style={font=\small},
+    label style={font=\small}
+]
+\addplot[
+    blue,
+    thick,
+    mark=*,
+] coordinates {
+(1,0.812)
+(2,0.887)
+(3,0.906)
+(4,0.920)
+(5,0.934)
+(6,0.939)
+(7,0.944)
+(8,0.950)
+(9,0.952)
+(10,0.953)
+(11,0.957)
+(12,0.958)
+(13,0.958)
+(14,0.964)
+(15,0.965)
+};
+\addlegendentry{Acurácia Treinamento}
+\addplot[
+    red,
+    thick,
+    mark=square*,
+] coordinates {
+(1,0.949)
+(2,0.965)
+(3,0.972)
+(4,0.975)
+(5,0.978)
+(6,0.979)
+(7,0.981)
+(8,0.982)
+(9,0.984)
+(10,0.985)
+(11,0.986)
+(12,0.986)
+(13,0.987)
+(14,0.988)
+(15,0.988)
+};
+\addlegendentry{Acurácia Validação}
+\end{axis}
+\end{tikzpicture}
+\caption{Evolução da acurácia durante o fine-tuning (Fase 2).}
+\label{fig:accuracy_fase2}
+\end{figure}
+
+
+\begin{figure}[ht]
+\centering
+\begin{tikzpicture}
+\begin{axis}[
+    width=0.9\linewidth,
+    height=7cm,
+    xlabel={Épocas},
+    ylabel={Loss},
+    xmin=1, xmax=15,
+    ymin=0.00, ymax=0.70,
+    xtick={1,2,...,15},
+    ytick={0.00,0.10,0.20,0.30,0.40,0.50,0.60,0.70},
+    grid=major,
+    legend pos=north east,
+    legend style={font=\small},
+    tick label style={font=\small},
+    label style={font=\small}
+]
+\addplot[
+    blue,
+    thick,
+    mark=*,
+] coordinates {
+(1,0.6587)
+(2,0.3682)
+(3,0.3052)
+(4,0.2512)
+(5,0.2136)
+(6,0.1969)
+(7,0.1772)
+(8,0.1610)
+(9,0.1543)
+(10,0.1466)
+(11,0.1312)
+(12,0.1354)
+(13,0.1283)
+(14,0.1129)
+(15,0.1104)
+};
+\addlegendentry{Loss Treinamento}
+\addplot[
+    red,
+    thick,
+    mark=square*,
+] coordinates {
+(1,0.1449)
+(2,0.1032)
+(3,0.0842)
+(4,0.0758)
+(5,0.0664)
+(6,0.0603)
+(7,0.0557)
+(8,0.0516)
+(9,0.0485)
+(10,0.0472)
+(11,0.0438)
+(12,0.0416)
+(13,0.0407)
+(14,0.0369)
+(15,0.0370)
+};
+\addlegendentry{Loss Validação}
+\end{axis}
+\end{tikzpicture}
+\caption{Evolução da função de perda durante o \textit{Fine-Tuning} (Fase 2).}
+\label{fig:loss_fase2}
+\end{figure}
+
+A Tabela \ref{tab:comparacao_fases} resume os resultados obtidos nas duas etapas de treinamento. O processo de \textit{Fine-Tuning} 
+elevou a acurácia global de 96,85\% para 98,81\%, correspondendo a um ganho aproximado de dois pontos percentuais. Embora esse 
+incremento pareça modesto em termos absolutos, ele representa uma redução expressiva da taxa de erro do modelo, fator particularmente
+relevante em aplicações de diagnóstico automático, nas quais pequenas melhorias na precisão podem reduzir significativamente a ocorrência
+de classificações incorretas.
+
+Esse ganho pode ser explicado pelo fato de que, na primeira etapa, apenas as camadas finais da rede foram treinadas, mantendo congelados
+os pesos previamente aprendidos na base ImageNet. Embora essas padrões visuais sejam eficientes para tarefas gerais de visão 
+computacional, elas não capturam integralmente as características específicas das doenças foliares. Durante o \textit{Fine-Tuning}, 
+a atualização controlada das camadas profundas permitiu adaptar essas representações às particularidades da base PlantVillage, 
+refinando a extração de características relacionadas à textura, coloração, formato e distribuição das lesões presentes nas folhas.
+
+\begin{table}[ht]
+\centering
+\caption{Comparação de desempenho entre as fases de treinamento.}
+\renewcommand{\arraystretch}{1.2}
+\setlength{\tabcolsep}{10pt}
+{\normalsize
+\begin{tabular}{lc}
+\hline
+Modelo & Acurácia (\%) \\
+\hline
+Transfer Learning (Fase 1) & 96,85 \\
+Fine-tuning (Fase 2) & 98,81 \\
+\hline
+\end{tabular}
+}
+\label{tab:comparacao_fases}
+\end{table}
+
+Os resultados obtidos estão em conformidade com estudos recentes que demonstram a elevada eficiência da arquitetura EfficientNet em 
+tarefas de classificação de doenças em plantas \cite{ref4}. Da mesma forma, corroboram revisões da literatura que apontam o 
+\textit{Transfer Learning} e o \textit{Fine-Tuning} como estratégias capazes de melhorar significativamente o desempenho de modelos 
+de aprendizado profundo em aplicações agrícolas, principalmente quando comparadas ao treinamento realizado do zero 
+\cite{ref2,ref21}.
+
+De maneira geral, a análise conjunta das curvas de acurácia e perda demonstra que o processo de treinamento apresentou convergência 
+estável, elevada capacidade de generalização e o mecanismo de Early Stopping foi capaz de interromper o treinamento antes que 
+surgissem indícios relevantes de sobreajuste. Assim, os resultados obtidos indicam que a metodologia proposta produziu modelos 
+robustos e adequados para a identificação automática de espécies vegetais e doenças foliares na base PlantVillage, fornecendo 
+evidências da eficácia da estratégia baseada em EfficientNetB0 associada ao \textit{Transfer Learning} e ao \textit{Fine-Tuning}.
+
+\subsection{Avaliação do Desempenho por Classe na Plataforma}
+Além da avaliação realizada sobre validação do treinamento, foi conduzido um experimento complementar para avaliar com objetivo 
+analisar o comportamento da plataforma utilizando dez imagens representativas por classe, selecionadas de forma independente. 
+Para cada classe foram contabilizados o número de acertos, erros e a confiança média das predições corretas, permitindo identificar
+quais doenças apresentaram maior facilidade ou dificuldade de reconhecimento.
+
+A Tabela \ref{tab:desempenho_classes} apresenta os resultados obtidos para as 38 classes avaliadas. No total, foram analisadas 380
+imagens, das quais 313 foram classificadas corretamente e 67 foram classificadas incorretamente. A confiança média das classificações
+foi de 89,47\%, indicando que, quando o modelo identifica corretamente uma classe, as probabilidades atribuídas às predições tendem 
+a ser elevadas.
+
+Observa-se que diversas classes apresentaram desempenho perfeito durante essa avaliação. Culturas como tomate, maçã, cereja, morango, 
+soja, mirtilo, uva saudável e pimentão saudável obtiveram 100\% de acertos, com níveis de confiança próximos de 100\%. Esse comportamento
+sugere que o modelo foi capaz de aprender representações altamente discriminativas para essas doenças, mesmo em uma arquitetura 
+relativamente compacta como a EfficientNetB0.
+
+Entre as classes do tomateiro, que representam a maior parcela da base PlantVillage, apresentaram 100\% de acerto na amostra avaliada, 
+incluindo saudável, Mancha Bacteriana, Queima Precoce, Requeima, Mancha de Septória, Ácaro-rajado, Mancha-Alvo, Mofo das Folhas, 
+Vírus do Mosaico e Vírus do Enrolamento Amarelo das Folhas. Esses resultados sugerem que o elevado número de amostras disponíveis para
+essa cultura favoreceu a aprendizagem das características específicas de suas doenças.
+
+Por outro lado, algumas classes apresentaram desempenho de acerto inferior às demais, destacando-se principalmente Requeima da Batata
+(48,12\%), Batata Saudável (54,50\%), Queima Precoce da Batata (60,98\%), Huanglongbing da Laranjeira (60,99\%), Ferrugem Comum
+do Milho (61\%), Mancha Bacteriana da Pimenteira (66,90\%) e Mancha Foliar da Videira (67,50\%). Nessas categorias, observou-se redução 
+tantoda taxa de acerto quanto da confiança média das classificações, indicando maior dificuldade do modelo em distinguir padrões 
+visuais semelhantes.
+
+\begin{table}[ht]
+\centering
+\caption{Desempenho por classe - Confiança média das predições}
+\renewcommand{\arraystretch}{0.9}
+\setlength{\tabcolsep}{3pt}
+{\scriptsize
+\begin{tabular}{p{4.0cm}rrrr}
+\hline
+Classe & Total & Acertos & Erros & Média (\%) \\
+\hline
+Sarna da maçã (Apple Scab) & 10 & 10 & 0 & 99.95 \\
+Podridão negra da maçã (Apple Black Rot) & 10 & 8 & 2 & 87.00 \\
+Ferrugem do cedro-macieira (Cedar Apple Rust) & 10 & 10 & 0 & 99.99 \\
+Maçã saudável (Apple Healthy) & 10 & 10 & 0 & 99.83 \\
+Mirtilo saudável (Blueberry Healthy) & 10 & 10 & 0 & 99.62 \\
+Cereja saudável (Cherry Healthy) & 10 & 10 & 0 & 100.00 \\
+Oídio da cerejeira (Cherry Powdery Mildew) & 10 & 10 & 0 & 100.00 \\
+Mancha de Cercospora do milho (Corn Cercospora Leaf Spot / Gray Leaf Spot) & 10 & 9 & 1 & 91.03 \\
+Ferrugem comum do milho (Corn Common Rust) & 10 & 4 & 6 & 61.00 \\
+Milho saudável (Corn Healthy) & 10 & 6 & 4 & 74.00 \\
+Queima das folhas do milho (Corn Northern Leaf Blight) & 10 & 7 & 3 & 82.40 \\
+Podridão negra da videira (Grape Black Rot) & 10 & 6 & 4 & 72.84 \\
+Esca da videira (Grape Black Measles) & 10 & 9 & 1 & 93.49 \\
+Uva saudável (Grape Healthy) & 10 & 10 & 0 & 99.98 \\
+Mancha foliar da videira (Grape Leaf Blight) & 10 & 5 & 5 & 67.50 \\
+Huanglongbing da laranjeira (Orange Huanglongbing) & 10 & 4 & 6 & 60.99 \\
+Mancha bacteriana do pessegueiro (Peach Bacterial Spot) & 10 & 7 & 3 & 80.49 \\
+Pêssego saudável (Peach Healthy) & 10 & 9 & 1 & 93.50 \\
+Mancha bacteriana da pimenteira (Pepper Bacterial Spot) & 10 & 5 & 5 & 66.99 \\
+Pimentão saudável (Pepper Healthy) & 10 & 10 & 0 & 99.87 \\
+Queima precoce da batata (Potato Early Blight) & 10 & 4 & 6 & 60.98  \\
+Batata saudável (Potato Healthy) & 10 & 3 & 7 & 54.5 \\
+Requeima da batata (Potato Late Blight) & 10 & 2 & 8 & 48.12 \\
+Framboesa saudável (Raspberry Healthy) & 10 & 9 & 1 & 93.50 \\
+Soja saudável (Soybean Healthy) & 10 & 10 & 0 & 100.00 \\
+Oídio da abóbora (Squash Powdery Mildew) & 10 & 8 & 2 & 87.00 \\
+Morango saudável (Strawberry Healthy) & 10 & 10 & 0 & 100.00 \\
+Queimadura foliar do morango (Strawberry Leaf Scorch) & 10 & 8 & 2 & 80.50 \\
+Mancha bacteriana do tomateiro (Tomato Bacterial Spot) & 10 & 10 & 0 & 99.90 \\
+Queima precoce do tomateiro (Tomato Early Blight) & 10 & 10 & 0 & 94.60 \\
+Tomate saudável (Tomato Healthy) & 10 & 10 & 0 & 99.96 \\
+Requeima do tomateiro (Tomato Late Blight) & 10 & 10 & 0 & 92.20 \\
+Mofo das folhas do tomateiro (Tomato leaf Mold) & 10 & 10 & 0 & 99.93 \\
+Mancha de Septória do tomateiro (Tomato Septoria Leaf Spot) & 10 & 10 & 0 & 99.29 \\
+Ácaro-rajado do tomateiro(Tomato Spider Mites Two-Spotted Spider Mite) & 10 & 10 & 0 & 96.78 \\
+Mancha-alvo do tomateiro (Tomato Target Spot) & 10 & 10 & 0 & 98.88 \\
+Vírus do mosaico do tomateiro (Tomato Mosaic Virus) & 10 & 10 & 0 & 99.94 \\
+Vírus do enrolamento amarelo das folhas do tomateiro (Tomato Yellow Leaf Curl Virus) & 10 & 10 & 0 & 99.97 \\
+Total imagens & 380 & 313 & 67 & 89.47 \\
+\hline
+\end{tabular}
+}
+\label{tab:desempenho_classes}
+\end{table}
+
+Essa diferença de desempenho pode ser explicada por diversos fatores. O primeiro está relacionado à elevada similaridade visual entre
+determinadas doenças foliares, especialmente nos estágios iniciais de desenvolvimento, quando alterações de coloração, necroses e 
+manchas apresentam características bastante semelhantes entre espécies distintas. Em consequência, pequenas diferenças de textura 
+ou distribuição das lesões tornam-se decisivas para a classificação automática, aumentando a probabilidade de confusão entre classes,
+conforme observado em estudos recentes sobre diagnóstico de doenças em plantas \citep{ref2,ref3}.
+
+Outro fator importante refere-se ao desbalanceamento da base PlantVillage. Embora todas as classes possuam quantidade suficiente de 
+imagens para treinamento, existe predominância de determinadas culturas, principalmente o tomateiro, que concentra um número 
+significativamente maior de amostras do que outras culturas. Essa distribuição desigual favorece o aprendizado das classes majoritárias,
+fazendo com que a rede neural desenvolva representações mais robustas para essas categorias durante o processo de otimização.
+
+Durante a inspeção qualitativa das predições incorretas, observou-se ainda que parte dos erros ocorreu justamente por associações com
+doenças do tomateiro, mesmo quando não tem muitas similaridades. Esse comportamento sugere que, diante de imagens ambíguas, o modelo 
+tende a favorecer classes pertencentes à cultura com maior representatividade na base de treinamento, fenômeno frequentemente observado 
+em modelos treinados sobre conjuntos de dados desbalanceados.
+
+Apesar dessas limitações, os resultados demonstram que a maior parte das classes apresentou elevado desempenho e alta confiança nas 
+classificações, indicando a capacidade do modelo em extrair características discriminativas relevantes para diferentes espécies 
+vegetais. Além disso, a estratégia proposta neste trabalho, baseada na utilização de dois modelos independentes, um para identificação
+da espécie vegetal e outro para classificação da doença, associada ao mecanismo de compatibilidade biológica implementado na 
+plataforma, contribuiu para reduzir inconsistências entre as predições e aumentar a confiabilidade do diagnóstico final apresentado 
+ao usuário.
+
+Em conjunto, esses resultados indicam que a metodologia proposta apresenta elevado potencial para aplicações práticas de diagnóstico 
+fitossanitário, embora evidenciem oportunidades de aprimoramento futuro, como a utilização de técnicas de balanceamento de classes, 
+treinamento com bases mais diversificadas e inclusão de imagens obtidas em condições reais de campo, reduzindo o impacto do 
+desbalanceamento e aumentando a capacidade de generalização do sistema.
+
+\subsection{Avaliação da Plataforma}
+
+Além da avaliação dos modelos de Inteligência Artificial, foi realizada uma avaliação funcional da plataforma web desenvolvida, com o 
+objetivo de verificar o correto funcionamento e a integração entre os componentes da arquitetura proposta. Os testes abrangeram todo 
+o fluxo de utilização do sistema, incluindo autenticação de usuários, processamento das imagens, comunicação entre o frontend, 
+backend e modelos de aprendizado profundo, armazenamento das informações no banco de dados e consulta ao histórico de diagnósticos.
+
+A autenticação representa a etapa inicial de utilização da plataforma. Conforme ilustrado na Figura \ref{fig:login}, o sistema 
+disponibiliza funcionalidades de cadastro e login utilizando autenticação baseada em \textit{JSON Web Token} (JWT), permitindo o acesso
+seguro às funcionalidades restritas da aplicação. Após a validação das credenciais, o token gerado é utilizado para autenticar as 
+requisições enviadas ao servidor, garantindo que apenas usuários autorizados possam acessar e registrar diagnósticos.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1.00\linewidth]{login_cadastro.jpg}
+\caption{Tela de login e cadastro da plataforma.}
+\label{fig:login}
+\end{figure}
+
+Após a autenticação, o usuário é direcionado ao painel principal da plataforma, apresentado na Figura \ref{fig:dashboard}. Esse 
+ambiente centraliza as principais funcionalidades do sistema, oferecendo acesso às ferramentas de diagnóstico, ao histórico de 
+análises e aos demais módulos da aplicação. A interface foi desenvolvida com foco na simplicidade de navegação, reduzindo a quantidade
+de etapas necessárias para a execução das operações mais frequentes.
+
+A Figura \ref{fig:dashboard_plants} apresenta a tela de seleção das culturas agrícolas disponíveis para análise. Essa organização 
+permite ao usuário navegar de forma intuitiva entre as espécies cadastradas, facilitando a utilização da plataforma e tornando o 
+processo de diagnóstico mais objetivo.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1.00\linewidth]{inicio.jpeg}
+\caption{Tela inicial (dashboard) da plataforma.}
+\label{fig:dashboard}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1.00\linewidth]{inicio_plantas.jpeg}
+\caption{Dashboard com seleção de culturas agrícolas.}
+\label{fig:dashboard_plants}
+\end{figure}
+
+O envio das imagens é realizado por meio da interface ilustrada na Figura \ref{fig:upload}. Nessa etapa, o usuário seleciona uma 
+fotografia da folha que será submetida aos modelos de Inteligência Artificial para processamento. Antes da análise, o sistema verifica
+se o arquivo enviado corresponde a uma imagem válida e, na interface, disponibiliza uma pré-visualização da imagem selecionada. Essas 
+validações evitam o processamento de arquivos inválidos, reduzem a ocorrência de erros durante a execução do sistema e proporcionam 
+uma melhor experiência de utilização.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1.00\linewidth]{detectar.jpeg}
+\caption{Tela de envio de imagens para análise.}
+\label{fig:upload}
+\end{figure}
+
+Após o processamento, o sistema retorna os resultados da predição, apresentados nas Figuras \ref{fig:resultado1} e \ref{fig:resultado2}. 
+O sistema apresenta simultaneamente a espécie identificada, a doença detectada e o nível de confiança da classificação. 
+A integração dessas informações com descrições textuais geradas automaticamente amplia o caráter interpretativo do diagnóstico e 
+diferencia a plataforma de soluções que apresentam apenas o rótulo da classe prevista.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1.00\linewidth]{planta_health.jpeg}
+\caption{Resultado do diagnóstico indicando planta saudável.}
+\label{fig:resultado1}
+\end{figure}
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1.00\linewidth]{resultado_nao_baseset.jpeg}
+\caption{Resultado do diagnóstico indicando presença de doença com foto que não pertence a base de treinamento.}
+\label{fig:resultado2}
+\end{figure}
+
+Mesmo quando são utilizadas imagens que não pertencem à base PlantVillage, como ilustrado na Figura \ref{fig:resultado2}, o sistema
+apresentou uma classificação compatível com o estado visual da planta avaliada, embora com menor nível de confiança. Esse resultado 
+sugere que os modelos não memorizaram apenas as imagens do conjunto de treinamento, apresentando capacidade de generalização para
+amostras inéditas.
+
+Por fim, a Figura \ref{fig:historico} apresenta a funcionalidade de histórico de diagnósticos. Nessa seção, o usuário pode consultar 
+todas as análises previamente realizadas, visualizar novamente as imagens enviadas e acessar os respectivos resultados. Além de 
+facilitar o acompanhamento contínuo das condições fitossanitárias das plantas monitoradas, essa funcionalidade garante a 
+persistência dos dados e a rastreabilidade das inferências produzidas pelos modelos de Inteligência Artificial.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=1.00\linewidth]{historico.jpeg}
+\caption{Tela de histórico das análises realizadas pelos usuários.}
+\label{fig:historico}
+\end{figure}
+
+Durante os testes de validação da plataforma, todas as funcionalidades implementadas apresentaram comportamento consistente. 
+O processo de autenticação, o envio das imagens, a comunicação entre o frontend e a API REST, a execução dos modelos de 
+classificação, a geração dos resultados e o armazenamento das análises ocorreram sem falhas funcionais. Dessa forma, os 
+experimentos confirmam que a arquitetura proposta integrou adequadamente os componentes de interface, serviços de backend, 
+banco de dados e modelos de aprendizado profundo, disponibilizando uma solução capaz de realizar diagnósticos automatizados 
+de doenças em plantas de forma rápida, organizada e acessível ao usuário.
+
+
+\subsection{Comparação com trabalhos relacionados}
+
+A comparação dos resultados obtidos neste trabalho com aqueles reportados na literatura deve ser realizada com cautela, uma
+vez que diferentes estudos empregam conjuntos de dados, protocolos experimentais, estratégias de particionamento, técnicas 
+de pré-processamento e arquiteturas de redes neurais distintos. Esses fatores influenciam diretamente as métricas de desempenho,
+tornando inadequada a comparação baseada exclusivamente nos valores de acurácia.
+
+Na base PlantVillage, utilizada neste trabalho, \cite{ref1} reportaram acurácia superior a 99\% empregando redes neurais 
+convolucionais profundas. Revisões recentes \citep{ref2,ref3,ref5} mostram que arquiteturas modernas, como EfficientNet, ResNet,
+DenseNet e Vision Transformers, frequentemente alcançam acurácias superiores a 98\% quando avaliadas em bases de dados obtidas 
+em condições controladas. Esses resultados demonstram que a classificação automática de doenças vegetais em ambientes controlados 
+constitui um problema amplamente explorado, no qual diferentes arquiteturas apresentam desempenho bastante elevado.
+
+Nesse contexto, o modelo proposto neste trabalho obteve acurácia de 98,81\% na classificação da segunda fase utilizando a 
+EfficientNetB0, resultado compatível com que foi reportado na literatura. Além do bom desempenho, a arquitetura adotada apresenta
+menor custo computacional quando comparada a modelos mais complexos, característica que favorece sua utilização em aplicações 
+práticas e ambientes com recursos computacionais limitados \citep{ref4}.
+
+Entretanto, a principal contribuição deste trabalho não está apenas na obtenção de elevada acurácia, mas na arquitetura da solução 
+desenvolvida. Diferentemente da maioria dos estudos analisados, que utilizam um único classificador para identificar simultaneamente 
+a espécie vegetal e a doença, a abordagem proposta emprega dois modelos independentes: um destinado ao reconhecimento da espécie
+e outro à identificação da doença. As predições produzidas por esses modelos são posteriormente integradas por um mecanismo de 
+verificação de compatibilidade biológica, responsável por validar se a doença identificada pode, de fato, ocorrer na espécie 
+reconhecida. Essa estratégia reduz inconsistências entre as predições e aumenta a confiabilidade do diagnóstico final, 
+representando uma contribuição prática pouco explorada nos trabalhos relacionados.
+
+Outro diferencial da proposta refere-se ao desenvolvimento de uma plataforma web completa para disponibilização dos modelos de 
+Inteligência Artificial. Enquanto grande parte dos trabalhos limita-se à avaliação experimental dos classificadores, a solução 
+desenvolvida integra autenticação de usuários, armazenamento persistente dos diagnósticos, histórico de consultas, processamento 
+automatizado das imagens, comunicação entre frontend e backend por meio de API REST e geração automática de descrições textuais 
+utilizando modelos de linguagem. Dessa forma, o trabalho extrapola a etapa de desenvolvimento do modelo preditivo, oferecendo 
+uma solução integrada voltada à utilização em cenários reais de apoio ao diagnóstico fitossanitário.
+
+Apesar dos resultados promissores, as limitações observadas são consistentes com aquelas relatadas na literatura. Assim como em 
+diversos estudos anteriores \citep{ref1,ref2,ref3}, o treinamento foi realizado utilizando a base PlantVillage, composta 
+predominantemente por imagens obtidas em condições controladas de iluminação, fundo homogêneo e baixa variabilidade ambiental. 
+Essas características favorecem o desempenho dos modelos, mas não representam integralmente as condições encontradas em ambientes 
+agrícolas reais.
+
+Consequentemente, embora a plataforma tenha apresentado desempenho satisfatório inclusive em imagens externas à base de treinamento, 
+a avaliação em condições reais de campo ainda representa um desafio importante e uma oportunidade para trabalhos futuros. A 
+utilização e bases de dados compostas por imagens capturadas em diferentes condições de iluminação, oclusão, fundo e estágios de 
+desenvolvimento das plantas permitirá avaliar de forma mais abrangente a robustez e a capacidade de generalização da solução proposta.
+
+\subsection{Limitações do Estudo}
+
+Embora os resultados obtidos demonstrem desempenho satisfatório, algumas limitações devem ser consideradas. A principal refere-se à 
+utilização da base PlantVillage, cujas imagens foram adquiridas em condições controladas de iluminação, fundo homogêneo e folhas 
+isoladas. Embora adequadas para o treinamento dos modelos, essas condições não representam integralmente os cenários encontrados 
+em ambientes agrícolas reais, nos quais fatores como iluminação variável, oclusões e diferentes estágios de desenvolvimento das 
+plantas tornam a classificação mais desafiadora \citep{ref2,ref3,ref17}.
+
+Outra limitação está relacionada ao desbalanceamento entre as classes da base de dados, o que pode favorecer culturas com maior número 
+de amostras e influenciar o desempenho em espécies menos representadas.
+
+Além disso, a avaliação foi realizada por meio de uma estratégia \textit{hold-out} utilizando a própria PlantVillage. Assim, embora os 
+resultados indiquem boa capacidade de generalização para imagens não utilizadas no treinamento, ainda são necessários experimentos com 
+bases de dados obtidas em condições reais, bem como avaliações da plataforma com usuários finais, para validar sua aplicabilidade 
+em cenários práticos.
 
 \section{Conclusão}
 
-Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
+Este trabalho apresentou o desenvolvimento de uma plataforma web baseada em Inteligência Artificial para a identificação automática de 
+doenças em plantas a partir da análise de imagens de folhas. A solução proposta integra técnicas de Visão Computacional e Aprendizado 
+Profundo em uma arquitetura cliente-servidor, combinando dois modelos especializados baseados na arquitetura EfficientNetB0, sendo um 
+destinado à identificação da espécie vegetal e outro à classificação da doença associada.
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum \citep{ref5}.
+Os resultados experimentais demonstraram a eficácia da abordagem proposta para o problema investigado. Os modelos alcançaram índices 
+relevantes de acurácia nos conjuntos de validação, indicando que o uso de estratégias como \textit{Transfer Learning}, 
+\textit{Fine-Tuning}, aumento de dados e mecanismos de regularização contribuiu significativamente para o aprendizado de representações
+discriminativas das imagens. Adicionalmente, a estratégia de inferência baseada na compatibilidade entre espécie vegetal e doença 
+mostrou-se eficiente na redução de inconsistências entre as predições dos classificadores, aumentando a confiabilidade do diagnóstico
+final.
 
+Outro aspecto relevante deste trabalho é a integração dos modelos de Inteligência Artificial em uma plataforma web completa, que 
+contempla autenticação de usuários, armazenamento do histórico de diagnósticos, processamento automatizado de imagens e geração de 
+descrições textuais complementares. Dessa forma, a pesquisa ultrapassa a etapa de construção de modelos preditivos, oferecendo uma 
+solução funcional e aplicada que aproxima os avanços da Inteligência Artificial de cenários reais de uso na agricultura digital.
+
+Entretanto, algumas limitações devem ser consideradas na interpretação dos resultados. Os modelos foram treinados e avaliados 
+utilizando a base PlantVillage, composta predominantemente por imagens obtidas em condições controladas. Assim, o desempenho 
+observado pode não se manter integralmente em ambientes reais de cultivo, nos quais há maior variabilidade de iluminação, fundo, 
+oclusões e qualidade das imagens.
+
+Como trabalhos futuros, pretende-se ampliar a base de dados com imagens coletadas em campo, realizar avaliações com bases independentes, 
+investigar arquiteturas mais recentes, como Vision Transformers e modelos híbridos, com o objetivo de aumentar a interpretabilidade 
+das decisões dos modelos. Também pretende-se fazer um polimento no frontend da plataforma e expandir para abranger um número maior 
+de culturas agrícolas e integrar mecanismos de monitoramento contínuo voltados ao apoio à agricultura de precisão.
+
+Conclui-se, portanto, que a solução proposta constitui uma abordagem viável para o apoio ao diagnóstico fitossanitário, ao integrar 
+modelosde aprendizado profundo, estratégias de validação das predições e uma plataforma web completa. Os resultados obtidos indicam 
+que a arquitetura desenvolvida possui potencial para contribuir com aplicações de agricultura digital, oferecendo uma ferramenta capaz 
+de auxiliar produtores e técnicos na identificação precoce de doenças em plantas.
 
 \begin{declarations}
 
-\begin{acknowledgements}
-ESTA DECLARAÇÃO É OPCIONAL. Este é um texto de agradecimentos com várias linhas. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-\end{acknowledgements}
-
-\begin{contributions}
-ESTA DECLARAÇÃO É OBRIGATÓRIA. Sugerimos que os autores descrevam sua contribuição usando a Taxonomia CRediT (\href{https://credit.niso.org/}{https://credit.niso.org/}) como neste exemplo: JV contribuiu para a concepção deste estudo. CB, RP e CM realizaram os experimentos. JV é o principal contribuidor e escritor deste manuscrito. Todos os autores leram e aprovaram o manuscrito final. 
-\end{contributions}
-
 \begin{interests}
-ESTA DECLARAÇÃO É OBRIGATÓRIA. Se não houver conflitos de interesse, os autores devem declarar: ``Os autores declaram que não têm nenhum conflito de interesses''. Caso contrário, a declaração deve ser: ``Os autores declaram que têm os seguintes conflito de interesses: lorem ipsum dolor sit amet, consectetur adipiscing elit.''
+Os autores declaram que não têm nenhum conflito de interesses.
 \end{interests}
 
 \begin{materials}
-ESTA DECLARAÇÃO É OBRIGATÓRIA. 
-  Se os autores estiverem disponibilizando seus dados e/ou códigos
-  abertamente, a declaração deve ser: ``Os conjuntos de dados (e/ou
-  softwares) gerados e/ou analisados durante o estudo atual estão
-  disponíveis em \ldots''. Caso contrário, a declaração deve ser: ``Os
-  conjuntos de dados (e/ou softwares) gerados e/ou analisados durante
-  o estudo atual serão feitos mediante solicitação''.
+Os conjuntos de dados utilizados neste estudo são provenientes da base pública PlantVillage. Os códigos-fonte desenvolvidos durante 
+esta pesquisa estão disponíveis em repositório público no GitHub, acessível em https://github.com/MariaQuaresma/CemaPlant
 \end{materials}
 
 \begin{furtherinformation}
-ESTA DECLARAÇÃO É DESEJÁVEL. Informações adicionais relevantes, como, por exemplo, a aprovação em comitê de ética ou o uso de ferramentas de IA generativa no desenvolvimento do artigo. Essa declaração é opcional, se não houver nada a ser acrescentado, pode ser deixada em branco
+O desenvolvimento deste trabalho contou com o uso do ChatGPT como apoio à revisão textual e aprimoramento da 
+redação científica. Todas as decisões técnicas, análises, resultados e a versão apresentada são de responsabilidade
+dos autores. Este trabalho não envolveu pesquisa com seres humanos ou animais.
 \end{furtherinformation}
 \end{declarations}
 
