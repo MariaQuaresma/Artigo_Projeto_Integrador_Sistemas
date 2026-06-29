@@ -1,13 +1,13 @@
 # Fdb version 4
-["bibtex main-pt"] 1782685157.01158 "main-pt.aux" "main-pt.bbl" "main-pt" 1782685164.1159 0
+["bibtex main-pt"] 1782693924.95464 "main-pt.aux" "main-pt.bbl" "main-pt" 1782694466.66428 0
   "./apalike-sol.bst" 1781623862 24928 269dedab788b7f84af88c155ecb45872 ""
   "./refs.bib" 1782679888 7365 70a3afa750208b16173da0235c40eee9 ""
-  "main-pt.aux" 1782685162 10091 5ea2407b52f917686ea9e108ecf5b206 "pdflatex"
+  "main-pt.aux" 1782694464 10091 5ea2407b52f917686ea9e108ecf5b206 "pdflatex"
   (generated)
   "main-pt.bbl"
   "main-pt.blg"
   (rewritten before read)
-["pdflatex"] 1782685157.50064 "c:/todosmeusarquivos/ProjetoIntegrador/Artigo_Projeto_Integrador_Sistemas/main-pt.tex" "main-pt.pdf" "main-pt" 1782685164.11704 0
+["pdflatex"] 1782694459.63327 "c:/todosmeusarquivos/ProjetoIntegrador/Artigo_Projeto_Integrador_Sistemas/main-pt.tex" "main-pt.pdf" "main-pt" 1782694466.6655 0
   "C:/Users/Maria/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1781921487 261737 7220613afb705163d15b5701e7470e45 ""
   "C:/Users/Maria/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt0900.pk" 1782003068 17512 05d79f4125f0844208ca3a9c8d39888d ""
   "C:/Users/Maria/AppData/Local/MiKTeX/fonts/pk/ljfour/jknappen/ec/dpi600/ectt1000.pk" 1781640458 20028 7baa37d5dc45a051ea6b5be0ae81255b ""
@@ -301,16 +301,16 @@
   "C:/Users/Maria/AppData/Local/Programs/MiKTeX/tex/latex/xkeyval/xkeyval.sty" 1656236919 4937 4ce600ce9bd4ec84d0250eb6892fcf4f ""
   "C:/Users/Maria/AppData/Local/Programs/MiKTeX/tex/latex/xstring/xstring.sty" 1693735632 123 a302f2c651a95033260db60e51527ae8 ""
   "aas_macros.sty" 1781623860 4967 cf45ff75f433e372cec5993ac08f4363 ""
-  "c:/todosmeusarquivos/ProjetoIntegrador/Artigo_Projeto_Integrador_Sistemas/main-pt.tex" 1782685136 72072 ceeeef52d2143ce37dd8c897d170d2d2 ""
+  "c:/todosmeusarquivos/ProjetoIntegrador/Artigo_Projeto_Integrador_Sistemas/main-pt.tex" 1782694457 72313 940392e97fe4322cbb54c9562a79f0c4 ""
   "detectar.jpeg" 1782243516 134133 18c752e200fdfd6e678d99dd80545a37 ""
   "historico.jpeg" 1782242442 142775 1e4834c6e085982c841869c67ae1ca68 ""
   "inicio.jpeg" 1782241890 182803 407e09045486d508222283ef11a42d77 ""
   "inicio_plantas.jpeg" 1782248880 327512 64e07be29e97fa66e31f9a74db1c3ed8 ""
   "login_cadastro.jpg" 1782248728 53551 4ba2ddcf3b40497b25bffdf53832c2b9 ""
-  "main-pt.aux" 1782685162 10091 5ea2407b52f917686ea9e108ecf5b206 "pdflatex"
-  "main-pt.bbl" 1782685157 6503 9d3e262eb128cd409717223d4247287d "bibtex main-pt"
-  "main-pt.out" 1782685162 3592 8360c63f2df7a2180d7ae9c320b1fd2a "pdflatex"
-  "main-pt.tex" 1782685136 72072 ceeeef52d2143ce37dd8c897d170d2d2 ""
+  "main-pt.aux" 1782694464 10091 5ea2407b52f917686ea9e108ecf5b206 "pdflatex"
+  "main-pt.bbl" 1782693925 6503 9d3e262eb128cd409717223d4247287d "bibtex main-pt"
+  "main-pt.out" 1782694464 3592 8360c63f2df7a2180d7ae9c320b1fd2a "pdflatex"
+  "main-pt.tex" 1782694457 72313 940392e97fe4322cbb54c9562a79f0c4 ""
   "planta_health.jpeg" 1782248564 133068 4f353793aa112909b76191540d515bc0 ""
   "resultado_nao_baseset.jpeg" 1782243748 149102 4e8d8815682f101d02b465629fe14b19 ""
   "sbc2025.cls" 1781623862 14970 28765eed94e0215f0a858dd242489835 ""
